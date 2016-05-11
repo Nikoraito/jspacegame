@@ -13,7 +13,9 @@ public class Sector{
     private int dimx = 1024, dimy = 1024, dimz = 1024;  //dimensions in meters
     private long posx = 0, posy = 0, posz = 0;
     private Array<Entity> ents; //for ent : ents vel = vel+accel*dt, pos = pos+vel*dt;
+    private Entity curEnt;
     private String filename;
+    
     public Sector(){
         ents = new Array<Entity>();
     }
@@ -28,7 +30,6 @@ public class Sector{
         ents = new Array<Entity>();
 
         this.filename = posx + "." + posy + "." + posz + ".3sf";
-
         load();  //Load/create a file with the coordinates as its name.
     }
 
@@ -71,15 +72,21 @@ public class Sector{
 
     public void update(float dt){//dt = change in time in seconds
         //Run through all the entities in the sector, adjusting their positions, velocities, and accelerations.
-        for(Entity ent : ents){
-            ent.setPos(ent.getPos().mulAdd(ent.getVel(), dt));
-            ent.setVel(ent.getVel().mulAdd(ent.getAcc(), dt));
-            ent.setAngle(ent.getAngle().add(ent.getAngvel().mul(dt)));
-            ent.setAngvel(ent.getAngvel().add(ent.getAngacc().mul(dt)));
+        
+        for(int i = 0; i < ents.size; i++){
+            curEnt = ents.get(i);
+            
+            curEnt.setPos(curEnt.getPos().mulAdd(curEnt.getVel(), dt));
+            curEnt.setVel(curEnt.getVel().mulAdd(curEnt.getAcc(), dt));
+            curEnt.setAngle(curEnt.getAngle().add(curEnt.getAngvel().mul(dt)));
+            curEnt.setAngvel(curEnt.getAngvel().add(curEnt.getAngacc().mul(dt)));
 
-            System.out.println(ent.getPos());
-
+            System.out.println(curEnt.getPos());
         }
+    }
+    
+    public int getEntCount(){
+        return ents.size;
     }
 
 }

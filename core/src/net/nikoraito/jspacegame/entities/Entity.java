@@ -20,6 +20,8 @@ public class Entity{
 
     private int health = 100;
 
+    private int mass = 1; //Kilograms
+
     private Model model;
 
 
@@ -67,54 +69,42 @@ public class Entity{
     public void setPos(Vector3 p){
         position = p;
     }
-
     public void setVel(Vector3 v){
         velocity = v;
     }
-
     public void setAcc(Vector3 a){
         acceleration = a;
     }
-
     public void setAngle(Quaternion a){
         angle = a;
     }
-
     public void setAngvel(Quaternion av){
         angvel = av;
     }
-
     public void setAngacc(Quaternion aa){
         angacc = aa;
     }
-
-
     public Vector3 getPos(){
         return position;
     }
-
     public Vector3 getVel(){
         return velocity;
     }
-
     public Vector3 getAcc(){
         return acceleration;
     }
-
     public Quaternion getAngle(){
         return angle;
     }
-
     public Quaternion getAngvel(){
         return angvel;
     }
-
     public Quaternion getAngacc(){
         return angacc;
     }
 
     void die(){
-
+        //??? Function of entities, or their containers? ???
     }
 
     void setHealth(int h){
