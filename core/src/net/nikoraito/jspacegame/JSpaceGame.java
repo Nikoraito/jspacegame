@@ -19,7 +19,9 @@ import net.nikoraito.jspacegame.entities.*;
 
 
 public class JSpaceGame implements ApplicationListener{
+    /*client-stuff*/
     PerspectiveCamera cam;
+    Environment environment;
     CameraInputController camController;
     ModelBatch modelBatch;
     Array<ModelInstance> instances;
@@ -27,37 +29,42 @@ public class JSpaceGame implements ApplicationListener{
     ModelInstance instance;
     ModelBuilder modelbuilder;
 
-    LogicThread g; // game logic/physics thread
+    /*serverstuff*/
 
+    /*common*/
+    LogicThread g; // game logic/physics thread
 
     @Override
     public void create(){
-        /*
+
+        //unit reference
+        //Distance
+        // 1.0f in vectors = a meter
+        // 1.0f in time = a second
+        // 1.0f in Quaternions = 90 deg???
+        // 1 in mass = 1 kilogram
+        g = new LogicThread();
+        g.start();
+
         //Graphical Initialization
-        modelBatch = new ModelBatch();
         environment = new Environment();
         environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.2f, 0.9f, 0.9f, 0.8f));
         modelbuilder = new ModelBuilder();
+        instances = new Array<ModelInstance>();
+        modelBatch = new ModelBatch();
 
-        cam = new PerspectiveCamera(179, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-        cam.position.set(3f, 7f, 10f);
-        cam.lookAt(0f, 0f, 0f);
-        cam.near = 1f;
-        cam.far = 300f;
+        cam = new PerspectiveCamera(70, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        cam.position.set(new Vector3(g.sectors.get(0).posx, g.sectors.get(0).posy, g.sectors.get(0).posz).add(new Vector3(3f, 5f, 10f)));
+        cam.lookAt(new Vector3(g.sectors.get(0).posx, g.sectors.get(0).posy, g.sectors.get(0).posz));
+        cam.near    = 1f;
+        cam.far     = g.sectors.get(0).DIM_SCALE/2f;
         cam.update();
 
-        camController = new CameraInputController(cam); //Edit this!
-        model = modelbuilder.createBox(5f, 5f, 5f,
-                new Material(ColorAttribute.createDiffuse(Color.GREEN)),
-                VertexAttributes.Usage.Position | VertexAttributes.Usage.Normal);
+        camController = new CameraInputController(cam); //Edit this
 
         Gdx.input.setInputProcessor(camController);
 
-        instance = new ModelInstance(model);
-        */
 
-        g = new LogicThread();
-        g.start();
 
         System.out.println("Success, biiiitch");
 
@@ -71,14 +78,21 @@ public class JSpaceGame implements ApplicationListener{
 
     @Override
     public void render(){
-        /*
+
+        for (int i = 0; i < g.sectors.get(0).ents.size; i++){
+            instances.add(g.sectors.get(0).ents.get(i).buildModel());
+        }
+
         Gdx.gl.glViewport(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
 
         modelBatch.begin(cam);
-        modelBatch.render(instance);
+
+        for(int i = 0; i < instances.size; i++){
+            modelBatch.render(instances.get(i));
+        }
+
         modelBatch.end();
-*/
 
     }
 
@@ -95,7 +109,15 @@ public class JSpaceGame implements ApplicationListener{
     @Override
     public void dispose(){
         g.end();
-//      model.dispose();
+        //model.dispose();
+    }
+
+    public void refreshInstances(){
+        for (int i = 0; i < g.sectors.size; i++){
+            for (int j = 0; j < g.sectors.size; j++){
+                instances.add(g.sectors.get(i).ents.get(j).buildModel());
+            }
+        }
     }
 
 
