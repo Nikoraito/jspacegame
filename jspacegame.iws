@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" line="122" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" line="152" />
+    <bookmark url="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" line="130" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" line="160" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85291eae-4915-4dd5-a83e-0ea2a0be5051" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/JSpaceGame.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/JSpaceGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/LogicThread.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/LogicThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/Sector.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/Sector.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/Entity.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/Entity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/Harbinger-1.edf" afterPath="$PROJECT_DIR$/core/assets/entities/Harbinger-1.edf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/sectors/0.0.0.3sf" afterPath="$PROJECT_DIR$/core/assets/sectors/0.0.0.3sf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Sector.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Sector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jspacegame.iws" afterPath="$PROJECT_DIR$/jspacegame.iws" />
     </list>
@@ -79,11 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JSpaceGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JSpaceGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1783">
-              <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+            <state relative-caret-position="-497">
+              <caret line="100" column="50" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogicThread.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LogicThread.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="38" column="138" selection-start-line="38" selection-start-column="138" selection-end-line="38" selection-end-column="138" />
+            <state relative-caret-position="163">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,13 +115,17 @@
       <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+            <state relative-caret-position="317">
+              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Entity#1;class#Entity#0" expanded="false" />
                 <element signature="method#Entity#2;class#Entity#0" expanded="false" />
                 <element signature="method#Entity#3;class#Entity#0" expanded="false" />
+                <element signature="e#3741#3742#0" expanded="true" />
+                <element signature="e#3775#3776#0" expanded="true" />
+                <element signature="e#3833#3834#0" expanded="true" />
+                <element signature="e#3869#3870#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,9 +136,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#879#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,8 +177,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Sector.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java" />
-        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
       </list>
     </option>
   </component>
@@ -688,7 +689,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16384777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34566596" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -697,7 +698,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2710779" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2706131" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -725,7 +726,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -797,6 +798,10 @@
             <element signature="method#Entity#1;class#Entity#0" expanded="false" />
             <element signature="method#Entity#2;class#Entity#0" expanded="false" />
             <element signature="method#Entity#3;class#Entity#0" expanded="false" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3869#3870#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -846,6 +851,10 @@
             <element signature="method#Entity#1;class#Entity#0" expanded="false" />
             <element signature="method#Entity#2;class#Entity#0" expanded="false" />
             <element signature="method#Entity#3;class#Entity#0" expanded="false" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3869#3870#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -902,6 +911,10 @@
             <element signature="method#Entity#1;class#Entity#0" expanded="false" />
             <element signature="method#Entity#2;class#Entity#0" expanded="false" />
             <element signature="method#Entity#3;class#Entity#0" expanded="false" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3869#3870#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -948,6 +961,10 @@
             <element signature="method#Entity#1;class#Entity#0" expanded="false" />
             <element signature="method#Entity#2;class#Entity#0" expanded="false" />
             <element signature="method#Entity#3;class#Entity#0" expanded="false" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3869#3870#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1059,9 +1076,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#879#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,8 +1093,8 @@
         <state relative-caret-position="382">
           <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
           <folding>
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="false" />
+            <element signature="e#1952#1953#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1093,30 +1108,35 @@
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.2/888ddbf116b94ab6dbe07178e035091031425b67/gdx-backend-lwjgl-1.9.2-sources.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-497">
+          <caret line="100" column="50" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="128" column="5" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+        <state relative-caret-position="317">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Entity#1;class#Entity#0" expanded="false" />
             <element signature="method#Entity#2;class#Entity#0" expanded="false" />
             <element signature="method#Entity#3;class#Entity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="38" column="138" selection-start-line="38" selection-start-column="138" selection-end-line="38" selection-end-column="138" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3741#3742#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3833#3834#0" expanded="true" />
+            <element signature="e#3869#3870#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1129,10 +1149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1783">
-          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+        <state relative-caret-position="163">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

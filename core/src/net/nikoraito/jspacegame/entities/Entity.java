@@ -1,23 +1,15 @@
 package net.nikoraito.jspacegame.entities;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.assets.loaders.ModelLoader;
-import com.badlogic.gdx.files.FileHandle;
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.VertexAttributes;
-import com.badlogic.gdx.graphics.g3d.Material;
-import com.badlogic.gdx.graphics.g3d.Model;
 import com.badlogic.gdx.graphics.g3d.ModelInstance;
-import com.badlogic.gdx.graphics.g3d.attributes.ColorAttribute;
-import com.badlogic.gdx.graphics.g3d.loader.ObjLoader;
-import com.badlogic.gdx.graphics.g3d.utils.ModelBuilder;
 import com.badlogic.gdx.math.Quaternion;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Json;
+import com.badlogic.gdx.utils.JsonValue;
 
 /**
  * Created by The Plank on 2016-05-10.
  */
+//public class Entity implements Json.Serializable{
 public class Entity{
 
     //?
@@ -34,6 +26,8 @@ public class Entity{
     private Quaternion angle;       //
     private Quaternion angvel;      //
     private Quaternion angacc;      //
+
+    private ModelInstance modelInstance; // modelInstance initialized else-thefuck-where
 
     private int health = 100;       // Used in the Logic Thread to determine whether an Entity continues to be a thing
     private int mass = 1;           //Mass in Kilograms, used by LogicThread for physics. Mostly for impact calculations, and weight-restricted game behaviors
@@ -134,5 +128,53 @@ public class Entity{
     public synchronized void setModelName(String s){
         modelName = s;
     }
+
+    public synchronized void setModelInstance(ModelInstance mi){
+        modelInstance = mi;
+    }
+    public synchronized ModelInstance getModelInstance(){
+        return modelInstance;
+    }
+/*    @Override
+    public void write(Json json){   //The eternal question is "What is a raga?"
+                                    // Raga Shri - a very serious, evening raga.
+
+        json.writeValue(name);
+        json.writeValue(modelName);
+        json.writeValue(filename);
+        json.writeValue(idNumber);
+
+        json.writeValue(position);
+        json.writeValue(velocity);
+        json.writeValue(acceleration);
+
+        json.writeValue(angle);
+        json.writeValue(angvel);
+        json.writeValue(angacc);
+
+    }*/
+
+/*    @Override
+    public void read(Json json, JsonValue jsonData){
+
+        float[] temp;
+
+        name = jsonData.child().asString();
+        modelName = jsonData.child().asString();
+        filename = jsonData.child().asString();
+        idNumber = jsonData.child().asInt();
+
+        position = new Vector3(jsonData.child().asFloatArray());
+        velocity = new Vector3(jsonData.child().asFloatArray());
+        acceleration = new Vector3(jsonData.child().asFloatArray());
+
+        temp = jsonData.child().asFloatArray();
+        angle = new Quaternion(temp[0], temp[1], temp[2], temp[3]);
+        temp = jsonData.child().asFloatArray();
+        angvel = new Quaternion(temp[0], temp[1], temp[2], temp[3]);
+        temp = jsonData.child().asFloatArray();
+        angacc = new Quaternion(temp[0], temp[1], temp[2], temp[3]);
+
+    }*/
 
 }

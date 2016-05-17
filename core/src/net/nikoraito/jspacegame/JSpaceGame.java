@@ -21,6 +21,13 @@ import com.badlogic.gdx.utils.ArrayMap;
 import net.nikoraito.jspacegame.entities.*;
 
 
+/*In Java, Floating point numbers can be up to  (2-2^-23)*2^127 which is /almost/ 2^128 which is just an absurdly large number.
+    If I define a meter as 1.0 units, going at the speed of light ingame, (299792458 m/s)
+    it would take 1.1350598*10^30 seconds
+            = 3.9*10^23 years
+    to get from the coordinate 0,0,0 to the point where you would reach the overflow point.*/
+
+
 public class JSpaceGame implements ApplicationListener{
     /*client-stuff*/
     PerspectiveCamera cam;
@@ -47,10 +54,9 @@ public class JSpaceGame implements ApplicationListener{
         g = new LogicThread();  // Initialize the Logical and Physics part of the game
         g.start();              //
         entities = g.entities;
+        models = g.models;
 
         initInstances();        //
-
-
 
         //Graphical Initialization
         environment = new Environment();
@@ -85,8 +91,10 @@ public class JSpaceGame implements ApplicationListener{
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
 
         for (int i = 0; i < entities.size; i++){
-            instances.get(i).transform.set(entities.get(i).getPos(), entities.get(i).getAngle(), new Vector3(1,1,1));
+            //instances.get(i).transform.set(entities.get(i).getPos(), entities.get(i).getAngle(), new Vector3(1,1,1));
+            entities.get(i).getModelInstance().transform.set(entities.get(i).getPos(), entities.get(i).getAngle());
         }
+
 
         modelBatch.begin(cam);
 
@@ -118,15 +126,16 @@ public class JSpaceGame implements ApplicationListener{
 
     public void initInstances(){
         instances = new Array<ModelInstance>();
-
         models = new ArrayMap<String, Model>();
 
-        for (int j = 0; j < entities.size; j++){
-            if(!models.containsKey(entities.get(j).modelName)){
-                models.put(entities.get(j).modelName, loadModel(entities.get(j).modelName));
+        for (int i = 0; i < entities.size; i++){
+            if(!models.containsKey(entities.get(i).modelName)){
+                models.put(entities.get(i).modelName, loadModel(entities.get(i).modelName));
             }
+            //instances.add(new ModelInstance(models.get(entities.get(j).modelName)));
 
-            instances.add(new ModelInstance(models.get(entities.get(j).modelName)));
+            entities.get(i).setModelInstance(new ModelInstance(models.get(entities.get(i).modelName)));
+            instances.add(entities.get(i).getModelInstance());
         }
     }
 

@@ -2,8 +2,11 @@ package net.nikoraito.jspacegame;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.g3d.Model;
+import com.badlogic.gdx.graphics.g3d.ModelInstance;
 import com.badlogic.gdx.math.*;
 import com.badlogic.gdx.utils.Array;
+import com.badlogic.gdx.utils.ArrayMap;
 import com.badlogic.gdx.utils.Json;
 import net.nikoraito.jspacegame.entities.Entity;
 
@@ -12,8 +15,11 @@ public class LogicThread extends Thread{
 
     public int DIM_SCALE = 1024;
 
+    //These arrays are the public data shared between JSpaceGame and this class.
     public Array<Sector> sectors;   //All the sectors
     public Array<Entity> entities;  //All the entities from those sectors. TODO: Apply synchronized kw to all methods that are used in multiple threads (position updates)
+    public ArrayMap<String, Model> models; //Initialized from THE OTHER SIDE
+
     Entity curEnt;
     Thread t;
     long dt, tl;
@@ -31,14 +37,14 @@ public class LogicThread extends Thread{
     public void start(){  //Start, with the current location so we know what sectors to load.
         j = new Json();
 
-        sectors = new Array<Sector>();
-        entities = new Array<Entity>();
 
-        loadSector(0, 1, 0);
+        entities = new Array<Entity>();
+        sectors = new Array<Sector>();
+
+        loadSector(0, 0, 0);
         createEntity(0, 0, 0, new Entity(   new Vector3 (0, 0, 0),      new Vector3 (0, -0.5f, 2), new Vector3 (0, -9.81f, 10),
                                             new Quaternion(0, 0, 0, 0), new Quaternion(100, 5.25f, 90f, 0), new Quaternion(0, 100, 100, 11),
                                             "Harbinger", "ship.obj"));
-
         entities.get(0).setModelName("ship.obj");
 
 
@@ -97,7 +103,9 @@ public class LogicThread extends Thread{
         System.out.println("Loading" + id);
         file = Gdx.files.local("entities/" + id + ".edf");
         if(file.exists()){
-            entities.add(j.fromJson(Entity.class, file.readString()));
+            Entity e = j.fromJson(Entity.class, file.readString());
+            e.setModelInstance(new ModelInstance(models.get(e.modelName)));
+            entities.add(e);
         }
         else{
             System.out.println(" > Warning: " + id + " does not exist.");
