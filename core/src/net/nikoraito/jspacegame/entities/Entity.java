@@ -20,6 +20,8 @@ public class Entity{
     public String filename;        // Used by Sectors to load the Entity in.
     public String modelName;       // Used by the JSpaceGame class to generate a ModelInstance. /models/modelName.obj
 
+
+    //Implementable physics stuff?
     private Vector3 position;       // Physics shit used in sectors.
     private Vector3 velocity;       //
     private Vector3 acceleration;   //

@@ -195,6 +195,18 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
+  <component name="libraryTable">
+    <library name="KotlinJavaRuntime">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/kotlin-runtime.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/kotlin-reflect.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$PROJECT_DIR$/lib/kotlin-runtime-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
