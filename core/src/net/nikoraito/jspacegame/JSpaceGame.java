@@ -31,15 +31,18 @@ import net.nikoraito.jspacegame.entities.*;
 public class JSpaceGame implements ApplicationListener{
     /*client-stuff*/
     PerspectiveCamera cam;
-    Environment environment;
     CameraInputController camController;
+
+    Environment environment;
     ModelBatch modelBatch;
 
-    Array<Entity>           entities;
-    Array<ModelInstance>    instances;
-    ArrayMap<String, Model> models;
-    Model m;
     LogicThread g; // game logic/physics thread
+        Array<Entity>           entities;   // All of these are shared between threads.
+        Array<Player>           players;    //
+        Array<ModelInstance>    instances;  //
+        ArrayMap<String, Model> models;     //
+
+    Player me; //The current player! Added to the Array at some point but used by this thread to negotiate connecting user inputs with the player object.
 
     @Override
     public void create(){
@@ -53,25 +56,37 @@ public class JSpaceGame implements ApplicationListener{
 
         g = new LogicThread();  // Initialize the Logical and Physics part of the game
         g.start();              //
-        entities = g.entities;
-        models = g.models;
+        entities = g.entities;  //
+        models = g.models;      //
+        players = g.players;    //
 
-        initInstances();        //
+        initInstances(); //
 
         //Graphical Initialization
         environment = new Environment();
         environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.4f, 0.4f, 0.4f, 1f));
         modelBatch = new ModelBatch();
 
-        //Camera initialization -- TODO: Remove this shit and make it relative to a Player (extends Entity) class.
+        //Player initialization -- TODO:
+        //Initialize the player's Camera. SET THIS TO NULL IN DISPOSE.
+
         cam = new PerspectiveCamera(70, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
         cam.position.set(new Vector3(1f, 2f, 4f));
         cam.lookAt(new Vector3(0, 0, 0));
         cam.near    = 1f;
         cam.far     = g.DIM_SCALE/2f;
         cam.update();
-
         camController = new CameraInputController(cam);
+
+        me = new Player();
+        me.entity = g.getEntByID(4717439L);
+        me.entity.setController(new PlayerController(camController, cam));
+
+        players.add(me);
+
+        //g.getEntByID(16540008).setController(new PlayerController(camController, cam));
+        //players.add(new Player("ME", -1, g.getEntByID(16540008)));
+
         Gdx.input.setInputProcessor(camController);
 
         //Just to make sure all that happened.
@@ -91,9 +106,9 @@ public class JSpaceGame implements ApplicationListener{
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
 
         for (int i = 0; i < entities.size; i++){
-            //instances.get(i).transform.set(entities.get(i).getPos(), entities.get(i).getAngle(), new Vector3(1,1,1));
             entities.get(i).getModelInstance().transform.set(entities.get(i).getPos(), entities.get(i).getAngle());
         }
+
 
 
         modelBatch.begin(cam);
@@ -116,6 +131,9 @@ public class JSpaceGame implements ApplicationListener{
 
     @Override
     public void dispose(){
+        cam             = null;
+        camController   = null;
+        players.clear();
         g.end();
         for (int i = 0; i < models.size; i++){
             models.getValueAt(i).dispose();
@@ -125,15 +143,14 @@ public class JSpaceGame implements ApplicationListener{
     }
 
     public void initInstances(){
-        instances = new Array<ModelInstance>();
-        models = new ArrayMap<String, Model>();
+        instances = new Array<>();
+
+        models = new ArrayMap<>();
 
         for (int i = 0; i < entities.size; i++){
             if(!models.containsKey(entities.get(i).modelName)){
                 models.put(entities.get(i).modelName, loadModel(entities.get(i).modelName));
             }
-            //instances.add(new ModelInstance(models.get(entities.get(j).modelName)));
-
             entities.get(i).setModelInstance(new ModelInstance(models.get(entities.get(i).modelName)));
             instances.add(entities.get(i).getModelInstance());
         }

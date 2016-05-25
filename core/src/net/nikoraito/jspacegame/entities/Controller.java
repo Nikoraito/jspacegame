@@ -1,5 +1,8 @@
 package net.nikoraito.jspacegame.entities;
 
+import com.badlogic.gdx.math.Quaternion;
+import com.badlogic.gdx.math.Vector3;
+
 /**
  * Class with children, for controlling entities:
  *  |
@@ -12,8 +15,8 @@ package net.nikoraito.jspacegame.entities;
  */
 public class Controller extends Component{
 
-    Controller(){
-
+    public Controller(){
+        super( new Vector3(0,0,0), new Quaternion(0,0,0,0), "", "Controller");
     }
 
 }

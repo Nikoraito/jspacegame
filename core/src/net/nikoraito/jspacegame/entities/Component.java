@@ -6,33 +6,39 @@ import com.badlogic.gdx.math.Quaternion;
 import com.badlogic.gdx.math.Vector3;
 
 /**
- *  Components are sub-parts of Entities who inherit their
+ *  Components are sub-parts of Entities who inherit their positions
  */
 public class Component{
 
-    Vector3 position;
-    Vector3 offset;
-    Quaternion angle;
-    Quaternion offsetAngle;
+    Vector3 position        = new Vector3();
+    Vector3 offset          = new Vector3();
+    Quaternion angle        = new Quaternion();
+    Quaternion offsetAngle  = new Quaternion();
 
     int mass = 0;
+    int health = 25;
 
     String modelName;
+    String name;
     ModelInstance modelInstance;
 
     public Component(){
-
+        this( new Vector3(0,0,0), new Quaternion(0,0,0,0), "", "Component");
     }
 
-    public Component(Entity parent){
-        //TOdO: Make this work.
-        // parent.addComponent(this);
-        // this.position = parent.position + offset
-        // this.angle = parent.angle + offsetAngle
+    public Component(Vector3 offset, Quaternion offsetAngle, String modelName, String name){
+        this.offset         = offset;
+        this.offsetAngle    = offsetAngle;
+        this.name           = name;
+        this.modelName      = modelName;
     }
 
-    public Component(Entity parent, Vector3 offset, Quaternion angle){
-        //
+    public void clearTransform(){
+        position    = null;
+        offset      = null;
+        angle       = null;
+        offsetAngle = null;
     }
+
 
 }

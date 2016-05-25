@@ -9,7 +9,7 @@ import com.badlogic.gdx.utils.Array;
  */
 public class Sector{
 
-    public long posx = 0, posy = 0, posz = 0;                               //Location in the galaxy
+    public long posx = 0, posy = 0, posz = 0; //Location in da galaxy
 
     public Array<String> entIDs;
 
@@ -18,11 +18,13 @@ public class Sector{
     public Sector(){}
 
     public Sector(long posx, long posy, long posz){
+
         this.posx = posx;
         this.posy = posy;
         this.posz = posz;
-        entIDs = new Array<String>();
+        entIDs = new Array<>();
         this.filename = posx + "." + posy + "." + posz + ".3sf"; //Coordinates + .three-dimensional-sector-file
+
     }
 
 }
