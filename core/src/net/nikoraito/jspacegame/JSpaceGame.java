@@ -16,6 +16,7 @@ import com.badlogic.gdx.graphics.g3d.utils.ModelBuilder;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Quaternion;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.physics.bullet.Bullet;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ArrayMap;
 import net.nikoraito.jspacegame.entities.*;
@@ -71,21 +72,23 @@ public class JSpaceGame implements ApplicationListener{
         //Initialize the player's Camera. SET THIS TO NULL IN DISPOSE.
 
         cam = new PerspectiveCamera(70, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-        cam.position.set(new Vector3(1f, 2f, 4f));
+
         cam.lookAt(new Vector3(0, 0, 0));
         cam.near    = 1f;
         cam.far     = g.DIM_SCALE/2f;
-        cam.update();
+
         camController = new CameraInputController(cam);
 
         me = new Player();
-        me.entity = g.getEntByID(4717439L);
-        me.entity.setController(new PlayerController(camController, cam));
+        me.entity = g.getEntByID(221146L);
+        me.pc = new PlayerController(new Vector3(0,2,-2), new Quaternion(), camController, cam);
+        me.entity.setController(me.pc);
+
 
         players.add(me);
 
-        //g.getEntByID(16540008).setController(new PlayerController(camController, cam));
-        //players.add(new Player("ME", -1, g.getEntByID(16540008)));
+        cam.lookAt(me.entity.getPos());
+        cam.update();
 
         Gdx.input.setInputProcessor(camController);
 
@@ -106,10 +109,18 @@ public class JSpaceGame implements ApplicationListener{
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
 
         for (int i = 0; i < entities.size; i++){
-            entities.get(i).getModelInstance().transform.set(entities.get(i).getPos(), entities.get(i).getAngle());
+
+            entities.get(i).getModelInstance().transform.setFromEulerAngles(
+                    entities.get(i).getAngle().getYaw(),
+                    entities.get(i).getAngle().getPitch(),
+                    entities.get(i).getAngle().getRoll()
+            );
+
+            entities.get(i).getModelInstance().transform.setTranslation(entities.get(i).getPos());
+
         }
 
-
+        me.updateCam();
 
         modelBatch.begin(cam);
 

@@ -6,6 +6,7 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonValue;
+import com.badlogic.gdx.physics.bullet.collision.btCollisionObject;
 
 /**
  * Created by The Plank on 2016-05-10.
@@ -13,8 +14,8 @@ import com.badlogic.gdx.utils.JsonValue;
 //public class Entity implements Json.Serializable{
 public class Entity{
 
-
     private Controller controller = null;
+
     private Array<Component> components;
 
     //resources
@@ -24,6 +25,8 @@ public class Entity{
     public String modelName;       // Used by the JSpaceGame class to generate a ModelInstance. /models/modelName.obj
 
     //Implementable physics stuff?
+
+
     private Vector3 position;       // Physics shit used in sectors.
     private Vector3 velocity;       //  "I wanna get a fucking sleeve."
     private Vector3 acceleration;   //      "You got this tiny one on your arm and you fuckin cried"
@@ -31,7 +34,13 @@ public class Entity{
     private Quaternion angvel;      //
     private Quaternion angacc;      //
 
+
+    //
+    private Vector3 thrust;         // Forces applied from the entity to the entity, while velocity and acceleration are the TOTAL.
+    private Quaternion angThrust;   // Can drop in and out without affecting external forces, exempli gratia gravity and explosive forces.
+
     private ModelInstance modelInstance = null; // modelInstance initialized else-thefuck-where
+    private btCollisionObject co = null;        // ditto
 
     private int health = 100;       // Used in the Logic Thread to determine whether an Entity continues to be a thing
     private int mass = 1;           //Mass in Kilograms, used by LogicThread for physics. Impact calculations, weight-restricted game behaviors

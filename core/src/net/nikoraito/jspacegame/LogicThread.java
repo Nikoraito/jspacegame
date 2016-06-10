@@ -6,6 +6,7 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.g3d.Model;
 import com.badlogic.gdx.graphics.g3d.ModelInstance;
 import com.badlogic.gdx.math.*;
+import com.badlogic.gdx.physics.bullet.Bullet;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ArrayMap;
 import com.badlogic.gdx.utils.Json;
@@ -28,8 +29,14 @@ public class LogicThread extends Thread{
     Json j;
     FileHandle file;
 
+
+
+    long count = 0; //Number of updates since start
+    long ups = 0;   //Updates per Second ( Evaluated in calls to ups() )
+
     private String threadName;
     private boolean running = true;
+    boolean collisionsOn;
 
 
     LogicThread(){
@@ -37,8 +44,9 @@ public class LogicThread extends Thread{
     }
 
     public void start(){  //Start, with the current location so we know what sectors to load.
-        j = new Json();
+        Bullet.init();
 
+        j = new Json();
 
         entities    = new Array<Entity>();
         sectors     = new Array<Sector>();
@@ -46,7 +54,7 @@ public class LogicThread extends Thread{
 
         loadSector(0, 0, 0);
 
-        createEntity(0, 0, 0, new Entity(new Vector3(0, 0, 0), new Vector3(0, 0.5f, 0), new Quaternion(0,0,0,0), new Quaternion(0,0,0,0), "Videj", "ship.obj"));
+        //createEntity(0, 0, 0, new Entity(new Vector3(0, 0, 0), new Vector3(0, 0.5f, 0), new Quaternion(0,0,0,0), new Quaternion(0,0,0,0), "Videj", "ship.obj"));
 
 
         tl = System.nanoTime();
@@ -65,8 +73,6 @@ public class LogicThread extends Thread{
             tl = System.nanoTime();
 
             update( (float) dt / 1e9f); //time in seconds (partial seconds ideally)
-
-            //System.out.println("  > dt = " + dt + " ns");
         }
 
     }
@@ -150,37 +156,23 @@ public class LogicThread extends Thread{
     }
 
     public void update(float dt){//dt = change in time in (partial) seconds
-
+        count++;
         //Run through all the entities in memory, adjusting their linear and angular positions, velocities.
 
         for(Player p : players){
             //process all inputs
 
-            //p.getInput() <- affect the entity from within the player class, not here
+            p.input(dt);
 
-                //add acceleration
-            if(Gdx.input.isKeyPressed(Input.Keys.ANY_KEY)){
-                if(Gdx.input.isKeyPressed(Input.Keys.A)){
-                    p.entity.setAcc(p.entity.getAcc().mulAdd(new Vector3(0.2f, 0, 0), dt));
-                } if(Gdx.input.isKeyPressed(Input.Keys.D)){
-                    p.entity.setAcc(p.entity.getAcc().mulAdd(new Vector3(-0.2f, 0, 0), dt));
-                } if(Gdx.input.isKeyPressed(Input.Keys.W)){
-                    p.entity.setAcc(p.entity.getAcc().mulAdd(new Vector3(0, 0, 0.2f), dt));
-                } if(Gdx.input.isKeyPressed(Input.Keys.S)){
-                    p.entity.setAcc(p.entity.getAcc().mulAdd(new Vector3(0, 0, -0.2f), dt));
-                }
-            }
-            else{
-                p.entity.setAcc(p.entity.getAcc().add(new Vector3(0, 0, 0)));
-            }
+
         }
 
         for(Entity ent : entities){
 
-            ent.setPos(     ent.getPos().mulAdd(ent.getVel(), dt));
-            ent.setVel(     ent.getVel().mulAdd(ent.getAcc(), dt));
-            ent.setAngle(   ent.getAngle().add(ent.getAngvel().mul(dt)));
-            ent.setAngvel(  ent.getAngvel().add(ent.getAngacc().mul(dt)));
+            ent.getPos().mulAdd(ent.getVel(), dt);
+            ent.getVel().mulAdd(ent.getAcc(), dt);
+            //ent.getAngle().add(ent.getAngvel().mul(dt));
+            //ent.getAngvel().add(ent.getAngacc().mul(dt));
             ent.updateComponents();
 
             //System.out.println(ent.getVel());
@@ -222,6 +214,5 @@ public class LogicThread extends Thread{
         }
         return null;
     }
-
 
 }

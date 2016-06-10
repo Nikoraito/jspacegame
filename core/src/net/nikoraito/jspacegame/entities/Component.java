@@ -11,6 +11,23 @@ import com.badlogic.gdx.math.Vector3;
 public class Component{
 
     Vector3 position        = new Vector3();
+
+    public Vector3 getOffset(){
+        return offset;
+    }
+
+    public void setOffset(Vector3 offset){this.offset = offset;}
+    public Quaternion getAngle(){return angle;}
+    public void setAngle(Quaternion angle){this.angle = angle;}
+    public Quaternion getOffsetAngle(){return offsetAngle;}
+    public void setOffsetAngle(Quaternion offsetAngle){this.offsetAngle = offsetAngle;}
+    public Vector3 getPosition(){return position;}
+    public void setPosition(Vector3 position){this.position = position;}
+    public int getHealth(){return health;}
+    public void setHealth(int health){this.health = health;}
+    public int getMass(){return mass;}
+    public void setMass(int mass){this.mass = mass;}
+
     Vector3 offset          = new Vector3();
     Quaternion angle        = new Quaternion();
     Quaternion offsetAngle  = new Quaternion();
@@ -31,13 +48,6 @@ public class Component{
         this.offsetAngle    = offsetAngle;
         this.name           = name;
         this.modelName      = modelName;
-    }
-
-    public void clearTransform(){
-        position    = null;
-        offset      = null;
-        angle       = null;
-        offsetAngle = null;
     }
 
 
