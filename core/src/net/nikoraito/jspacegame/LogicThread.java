@@ -21,7 +21,7 @@ public class LogicThread extends Thread{
     //These arrays are the public data shared between JSpaceGame and this class.
     public Array<Sector> sectors;   //All the sectors
     public Array<Player> players;   //All the players (only one for a local game; Server should keep track of where everything is; Client does the Cam manipulation.
-    public Array<Entity> entities;  //All the entities from those sectors. TODO: Apply synchronized kw to all methods that are used in multiple threads (position updates)
+    public Array<Entity> entities;  //All the entities from those sectors.
     public ArrayMap<String, Model> models; //Initialized from THE OTHER SIDE
 
     Thread t;
@@ -54,10 +54,9 @@ public class LogicThread extends Thread{
 
         loadSector(0, 0, 0);
 
-        //createEntity(0, 0, 0, new Entity(new Vector3(0, 0, 0), new Vector3(0, 0.5f, 0), new Quaternion(0,0,0,0), new Quaternion(0,0,0,0), "Videj", "ship.obj"));
+        //createEntity(0, 0, 0, new Entity(new Vector3(0, 0, 0), new Vector3(0, 0.0f, 0), new Quaternion(0,0,0,0), new Quaternion(0,0,0,0), "Videj", "ship.obj"));
 
-
-        tl = System.nanoTime();
+        tl = System.currentTimeMillis();
         System.out.println("Starting " +  threadName );
         if (t == null){
             t = new Thread(this, threadName);
@@ -69,10 +68,9 @@ public class LogicThread extends Thread{
     public void run(){
         while(running){
 
-            dt = System.nanoTime() - tl;
-            tl = System.nanoTime();
-
-            update( (float) dt / 1e9f); //time in seconds (partial seconds ideally)
+            tl = System.currentTimeMillis();
+            update( (float) dt / 1e3f); //time in seconds (partial seconds ideally)
+            dt = System.currentTimeMillis() - tl;
         }
 
     }
@@ -97,6 +95,7 @@ public class LogicThread extends Thread{
         file = Gdx.files.local("entities/" + e.filename);
         e.setModelInstance(null);   //Conveniently, also nullifies the entry in instances!
         e.setController(null);      // Good? Bad???
+
         file.writeString(j.toJson(e), false);
         System.out.print(" > done. \n");
     }
@@ -161,22 +160,39 @@ public class LogicThread extends Thread{
 
         for(Player p : players){
             //process all inputs
-
             p.input(dt);
-
 
         }
 
         for(Entity ent : entities){
 
             ent.getPos().mulAdd(ent.getVel(), dt);
-            ent.getVel().mulAdd(ent.getAcc(), dt);
-            //ent.getAngle().add(ent.getAngvel().mul(dt));
-            //ent.getAngvel().add(ent.getAngacc().mul(dt));
+            ent.getVel().mulAdd(ent.getAcc(), dt).mulAdd(ent.getThrust().mul(ent.getAngle()), dt);
+
+            /*ent.getAngle().mul(ent.getAngvel()).nor();
+            ent.getAngvel().mul(ent.getAngacc()).mul(ent.getAngThrust());*/
+            ent.getAngle().mul(ent.getAngvel()).nor();
+            ent.getAngvel().mul(ent.getAngacc()).mul(ent.getAngThrust());
+
             ent.updateComponents();
+
+            //Softly slow down toward 0,0,0 at very minute total velocities
+            //TODO: Replace this segment with a stabilizer that also similarly gates Acceleration, Angular momentum, etc regulated by an ingame computer
+            if(ent.getVel().isZero(0.001f) && ent.getThrust().isZero(0.001f)){
+
+                // NOTE that this is not scaled to dt so as performance changes, evidently so will global freezing.
+                ent.getVel().scl(0.9999999f);  //magic deceleration constant
+
+                if(ent.getVel().isZero(0.0000001f)){
+                    ent.getVel().setZero();
+                }
+            }
 
             //System.out.println(ent.getVel());
         }
+
+        //System.out.println(dt);
+
     }
 
     public boolean sectorIsLoaded(long x, long y, long z){

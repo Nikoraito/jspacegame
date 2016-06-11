@@ -14,9 +14,8 @@ import com.badlogic.gdx.physics.bullet.collision.btCollisionObject;
 //public class Entity implements Json.Serializable{
 public class Entity{
 
-    private Controller controller = null;
-
-    private Array<Component> components;
+    private volatile Controller controller = null;
+    private volatile Array<Component> components;
 
     //resources
     private long idNumber = -1;
@@ -27,17 +26,19 @@ public class Entity{
     //Implementable physics stuff?
 
 
-    private Vector3 position;       // Physics shit used in sectors.
+    private volatile Vector3 position;       // Physics shit used in sectors.
     private Vector3 velocity;       //  "I wanna get a fucking sleeve."
     private Vector3 acceleration;   //      "You got this tiny one on your arm and you fuckin cried"
-    private Quaternion angle;       //
+    private volatile Quaternion angle;       //
     private Quaternion angvel;      //
     private Quaternion angacc;      //
 
 
     //
     private Vector3 thrust;         // Forces applied from the entity to the entity, while velocity and acceleration are the TOTAL.
-    private Quaternion angThrust;   // Can drop in and out without affecting external forces, exempli gratia gravity and explosive forces.
+    private Vector3 angThrust;      // Both can drop in and out without affecting external forces, exempli gratia gravity and explosive forces.
+                                    // AngThrust is applied as a Vector3 because it interfaces with the player, and is also relative to the current rotation of the entity.
+    private Quaternion angThrustq;
 
     private ModelInstance modelInstance = null; // modelInstance initialized else-thefuck-where
     private btCollisionObject co = null;        // ditto
@@ -100,36 +101,61 @@ public class Entity{
         angacc = aa;
         components = new Array<Component>();
 
+        thrust = new Vector3(0,0,0);
+        angThrust = new Vector3(0,0,0);
+        angThrustq = new Quaternion(0,0,0,0);
+
     }
 
-    public synchronized void setPos(Vector3 p){
+    public void setPos(Vector3 p){
         position = p;
     }
-    public synchronized void setVel(Vector3 v){
+    public void setVel(Vector3 v){
         velocity = v;
     }
-    public synchronized void setAcc(Vector3 a){
+    public void setVel(float x, float y, float z){
+        velocity.x = x;
+        velocity.y = y;
+        velocity.z = z;
+    }
+    public void setAcc(Vector3 a){
         acceleration = a;
     }
-    public synchronized void setAngle(Quaternion a){
+    //public synchronized void setAngle(Quaternion a){
+    public void setAngle(Quaternion a){
         angle = a;
     }
-    public synchronized void setAngvel(Quaternion av){
+    //public synchronized void setAngvel(Quaternion av){
+    public void setAngvel(Quaternion av){
         angvel = av;
     }
-    public synchronized void setAngacc(Quaternion aa){
+//    public synchronized void setAngacc(Quaternion aa){
+    public void setAngacc(Quaternion aa){
         angacc = aa;
     }
-    public synchronized Vector3 getPos(){
+//    public synchronized Vector3 getPos(){
+    public Vector3 getPos(){
         return position;
     }
     public Vector3 getVel(){
+
         return velocity;
     }
     public Vector3 getAcc(){
+
         return acceleration;
     }
-    public synchronized Quaternion getAngle(){
+    public Vector3 getThrust(){
+        return thrust;
+    }
+    public Quaternion getAngThrust(){
+        return angThrustq.setEulerAngles(
+                angThrust.x,
+                angThrust.y,
+                angThrust.z
+        );
+    }
+    public Quaternion getAngle(){
         return angle;
     }
     public Quaternion getAngvel(){
@@ -139,24 +165,89 @@ public class Entity{
         return angacc;
     }
 
-    public synchronized void updateComponents(){
+    //STYLE NOTE: overloading methods with by-value datasets should refer to down to one 'head' method
+    // the head method should as best as possible use primitive datatypes to reduce the use of temporary Objects
+    // while still allowing their use.
+    /**
+     * Head method for setting thrust directly.
+     * */
+    public void setAngThrust(float x, float y, float z){
+        angThrust.x = x;
+        angThrust.y = y;
+        angThrust.z = z;
+    }
+    /**
+     * Head method for setting thrust directly.
+     * */
+    public void setThrust(float x, float y, float z){
+        thrust.x = x;
+        thrust.y = y;
+        thrust.z = z;
+    }
+    public void setThrust(Vector3 v){
+        setThrust(v.x, v.y, v.z);
+    }
+
+    /**
+     * Head method for adding thrust directly to an entity.
+     * */
+    public void addAngThrust(float x, float y, float z){
+        angThrust.add(x, y, z);
+    }
+
+    /**
+     * Head method for adding thrust directly to an entity.
+     * */
+    public void addThrust(float x, float y, float z){
+        thrust.add(x, y, z);
+    }
+
+    public void addThrust(Vector3 v){
+        addThrust(v.x, v.y, v.z);
+    }
+
+    //Force = mass * acceleration
+    //Acceleration = force/mass
+    //Mass = force/acceleration
+    public void applyForce(float x, float y, float z){
+       addThrust(x/mass, y/mass, z/mass);
+    }
+    public void applyForce(Vector3 v){
+        applyForce(v.x, v.y, v.z);
+    }
+
+    public void applyAngForce(float x, float y, float z, float w){
+        angThrustq.mul(x/mass, y/mass, z/mass, w/mass);
+    }
+    public void applyAngForce(Quaternion q){
+        angThrustq.mul(q);
+    }
+    public void applyAngForce(float x, float y, float z){
+        angThrust.add(x/mass, y/mass, z/mass);
+    }
+
+
+    //public synchronized void updateComponents(){
+    public void updateComponents(){
         if(controller != null){
-            controller.position.set(this.position).add(controller.offset);
+            controller.position.set(position).add(controller.offset);
         }
 
         for (int i = 0; i < components.size; i++){
-            components.get(i).position.set(this.position).add(components.get(i).offset);
-            components.get(i).angle.set(this.angle).add(components.get(i).offsetAngle);
+            components.get(i).position.set(position).add(components.get(i).offset);
+            components.get(i).angle.set(angle).add(components.get(i).offsetAngle);
         }
 
     }
 
-    public synchronized void addComponent(Component c){
+    //public synchronized void addComponent(Component c){
+    public void addComponent(Component c){
         components.add(c);
         updateComponents();
     }
 
-    public synchronized void setController(Controller ct){
+    //public synchronized void setController(Controller ct){
+    public  void setController(Controller ct){
         this.controller = ct;
         updateComponents();
     }

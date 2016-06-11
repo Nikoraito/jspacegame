@@ -8,6 +8,8 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.PerspectiveCamera;
 import com.badlogic.gdx.graphics.VertexAttributes;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g3d.*;
 import com.badlogic.gdx.graphics.g3d.attributes.ColorAttribute;
 import com.badlogic.gdx.graphics.g3d.loader.ObjLoader;
@@ -30,7 +32,9 @@ import net.nikoraito.jspacegame.entities.*;
 
 
 public class JSpaceGame implements ApplicationListener{
-    /*client-stuff*/
+    BitmapFont font;
+    SpriteBatch spriteBatch;
+
     PerspectiveCamera cam;
     CameraInputController camController;
 
@@ -52,8 +56,12 @@ public class JSpaceGame implements ApplicationListener{
         //Distance
         // 1.0f in vectors = a meter
         // 1.0f in time = a second
-        // 1.0f in Quaternions = 90 deg???
         // 1 in mass = 1 kilogram
+
+        font = new BitmapFont();
+        spriteBatch = new SpriteBatch();
+
+        font.setColor(Color.YELLOW);
 
         g = new LogicThread();  // Initialize the Logical and Physics part of the game
         g.start();              //
@@ -74,14 +82,14 @@ public class JSpaceGame implements ApplicationListener{
         cam = new PerspectiveCamera(70, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 
         cam.lookAt(new Vector3(0, 0, 0));
-        cam.near    = 1f;
-        cam.far     = g.DIM_SCALE/2f;
+        cam.near    = 0.025f;
+        cam.far     = g.DIM_SCALE*2f;
 
         camController = new CameraInputController(cam);
 
         me = new Player();
         me.entity = g.getEntByID(221146L);
-        me.pc = new PlayerController(new Vector3(0,2,-2), new Quaternion(), camController, cam);
+        me.pc = new PlayerController(new Vector3(0,1,-3), new Quaternion(), camController, cam);
         me.entity.setController(me.pc);
 
 
@@ -110,24 +118,43 @@ public class JSpaceGame implements ApplicationListener{
 
         for (int i = 0; i < entities.size; i++){
 
-            entities.get(i).getModelInstance().transform.setFromEulerAngles(
-                    entities.get(i).getAngle().getYaw(),
-                    entities.get(i).getAngle().getPitch(),
-                    entities.get(i).getAngle().getRoll()
+            entities.get(i).getModelInstance().transform.set(
+                    entities.get(i).getPos(),
+                    entities.get(i).getAngle()
             );
 
-            entities.get(i).getModelInstance().transform.setTranslation(entities.get(i).getPos());
+
 
         }
+
+
 
         me.updateCam();
 
         modelBatch.begin(cam);
-
         modelBatch.render(instances, environment);
-
         modelBatch.end();
 
+        spriteBatch.begin();
+        font.draw(spriteBatch,
+                "AngThrust: " + me.entity.getAngThrust()
+                + "\n g.dt " + g.dt + "\n " + g.tl + "\n" + g.count
+                + "\n tf:  " + me.entity.getModelInstance().transform
+
+                + "\n ANGLE: yl" + me.entity.getAngle().getYaw()
+                + "\n pl" + me.entity.getAngle().getRoll()
+                + "\n rl" + me.entity.getAngle().getPitch()
+
+                + "\nPOS:" + me.entity.getPos().x + "\n   " + me.entity.getPos().y + "\n   " + me.entity.getPos().z
+                + "\nPOScam:" + me.pc.getPosition()
+                + "\nVEL:" + me.entity.getVel().x + "\n   " + me.entity.getVel().y + "\n   " + me.entity.getVel().z
+                + "\nANG:" + me.entity.getAngle().x + "\n   " + me.entity.getAngle().y + "   " + me.entity.getAngle().z + "\n   " + me.entity.getAngle().w
+                //+ "\nANGVEL:" + me.entity.getAngvel().x + "\n   " + me.entity.getAngvel().y + "   " + me.entity.getAngvel().z + "\n   " + me.entity.getAngvel().w
+                //+ "\nANGACC:" + me.entity.getAngacc().x + "\n   " + me.entity.getAngacc().y + "   " + me.entity.getAngacc().z + "\n   " + me.entity.getAngacc().w
+
+                ,0, 460);
+
+        spriteBatch.end();
     }
 
     @Override
@@ -142,14 +169,19 @@ public class JSpaceGame implements ApplicationListener{
 
     @Override
     public void dispose(){
+
+        //Some things have to be set to null so that when entities are serialized, the very complex and PARTIALLY
+        //  NATIVE objects
         cam             = null;
         camController   = null;
+
         players.clear();
         g.end();
         for (int i = 0; i < models.size; i++){
             models.getValueAt(i).dispose();
         }
         modelBatch.dispose();
+        font.dispose();
         instances.clear();
     }
 

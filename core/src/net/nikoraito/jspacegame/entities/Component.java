@@ -9,7 +9,6 @@ import com.badlogic.gdx.math.Vector3;
  *  Components are sub-parts of Entities who inherit their positions
  */
 public class Component{
-
     Vector3 position        = new Vector3();
 
     public Vector3 getOffset(){

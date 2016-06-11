@@ -33,52 +33,51 @@ public class Player{
 
     public void input(float dt){
         //TODO Implement thrust in the Entity
+
         //TODO Implement controls in entityController
         //TODO Feed input to EntityController here
 
+        entity.setThrust(0,0,0);    //Set thrust to nothing before each control update so that it is constant but
+        entity.setAngThrust(0,0,0);               //  instantaneous, rather than cumulative.
+
         if(Gdx.input.isKeyPressed(Input.Keys.ANY_KEY)){
             if(Gdx.input.isKeyPressed(Input.Keys.A)){
-                entity.getVel().mulAdd(new Vector3(0.4f, 0, 0), dt);
+                entity.addThrust(1f, 0, 0);  // 0.4m / s^2
             } if(Gdx.input.isKeyPressed(Input.Keys.D)){
-                entity.getVel().mulAdd(new Vector3(-0.4f, 0, 0), dt);
+                entity.addThrust(-1f, 0, 0);
             } if(Gdx.input.isKeyPressed(Input.Keys.W)){
-                entity.getVel().mulAdd(new Vector3(0, 0, 0.4f), dt);
+                entity.addThrust(0, 0, 1f);
             } if(Gdx.input.isKeyPressed(Input.Keys.S)){
-                entity.getVel().mulAdd(new Vector3(0, 0, -0.4f), dt);
+                entity.addThrust(0, 0, -1f);
             } if(Gdx.input.isKeyPressed(Input.Keys.E)){
-                entity.getVel().mulAdd(new Vector3(0, 0.4f, 0), dt);
+                entity.addThrust(0, 1f, 0);
             } if(Gdx.input.isKeyPressed(Input.Keys.Q)){
-                entity.getVel().mulAdd(new Vector3(0, -0.4f, 0), dt);
-            }
-            if(Gdx.input.isKeyPressed(Input.Keys.J)){
-                entity.getAngle().x += dt;
-            } if(Gdx.input.isKeyPressed(Input.Keys.L)){
-                entity.getAngle().x -= dt;
-            } if(Gdx.input.isKeyPressed(Input.Keys.K)){
-                entity.getAngle().y += dt;
-            } if(Gdx.input.isKeyPressed(Input.Keys.I)){
-                entity.getAngle().y -= dt;
-            } if(Gdx.input.isKeyPressed(Input.Keys.U)){
-                entity.getAngle().z += dt;
-            } if(Gdx.input.isKeyPressed(Input.Keys.O)){
-                entity.getAngle().z -= dt;
-            } if(Gdx.input.isKeyPressed(Input.Keys.P)){
-                entity.getAngle().w += dt;
-            } if(Gdx.input.isKeyPressed(Input.Keys.Y)){
-                entity.getAngle().w -= dt;
+                entity.addThrust(0, -1f, 0);
             }
 
+            if(Gdx.input.isKeyPressed(Input.Keys.K)){
+                entity.addAngThrust(0, 1e-9f, 0);
+            } if(Gdx.input.isKeyPressed(Input.Keys.I)){
+                entity.addAngThrust(0, -1e-9f, 0);
+            } if(Gdx.input.isKeyPressed(Input.Keys.U)){
+                entity.addAngThrust(1f, 0, 0);
+            } if(Gdx.input.isKeyPressed(Input.Keys.O)){
+                entity.addAngThrust(-1f, 0, 0);
+            } if(Gdx.input.isKeyPressed(Input.Keys.J)){
+                entity.addAngThrust(0, 0, 1f);
+            } if(Gdx.input.isKeyPressed(Input.Keys.L)){
+                entity.addAngThrust(0, 0, -1f);
+            }
         }
     }
 
     public void updateCam(){
         if(pc != null){
             pc.getCam().position.set(
-                    entity.getPos().x + (pc.getOffset()).x,
-                    entity.getPos().y + (pc.getOffset()).y,
-                    entity.getPos().z + (pc.getOffset()).z
-            );
+                    pc.getOffset()
+            ).add(entity.getPos());
 
+            pc.getCam().rotate(entity.getAngle());
             pc.getCam().update();
             //System.out.print('.');
         }

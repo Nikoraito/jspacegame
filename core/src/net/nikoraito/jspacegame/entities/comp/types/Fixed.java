@@ -1,7 +1,7 @@
 package net.nikoraito.jspacegame.entities.comp.types;
 
 /**
- * 2-byte fixed-point.
+ *  2-byte fixed-point number
  *
  *  value = {x, y}
  *  toFloat returns x+(float)(y/256)
@@ -28,7 +28,6 @@ public class Fixed{
     public Fixed(float f){
         this((byte)Math.round(f), (byte)((f - Math.round(f))*256));
         //Will produce weird results if b is negative. Fun.
-
     }
 
     public byte[] getValue(){
