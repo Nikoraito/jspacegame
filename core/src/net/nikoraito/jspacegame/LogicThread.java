@@ -12,7 +12,7 @@ import com.badlogic.gdx.utils.ArrayMap;
 import com.badlogic.gdx.utils.Json;
 import net.nikoraito.jspacegame.entities.Entity;
 import net.nikoraito.jspacegame.entities.PlayerController;
-
+import java.util.Random;
 
 public class LogicThread extends Thread{
 
@@ -28,7 +28,7 @@ public class LogicThread extends Thread{
     long dt, tl;
     Json j;
     FileHandle file;
-
+    Random r;
 
 
     long count = 0; //Number of updates since start
@@ -45,7 +45,7 @@ public class LogicThread extends Thread{
 
     public void start(){  //Start, with the current location so we know what sectors to load.
         Bullet.init();
-
+        r = new Random();
         j = new Json();
 
         entities    = new Array<Entity>();
@@ -54,7 +54,11 @@ public class LogicThread extends Thread{
 
         loadSector(0, 0, 0);
 
-        //createEntity(0, 0, 0, new Entity(new Vector3(0, 0, 0), new Vector3(0, 0.0f, 0), new Quaternion(0,0,0,0), new Quaternion(0,0,0,0), "Videj", "ship.obj"));
+        //createEntity(0, 0, 0, new Entity(new Vector3(0, 0, 0), new Vector3(0, 0.0f, 0), new Quaternion(), new Quaternion(), "Videj", "ship.obj"));
+
+//        for(int i = 0; i < 12; i++){
+//            createEntity(0, 0, 0, new Entity(new Vector3((r.nextFloat()-0.5f)*100f, (r.nextFloat()-0.5f)*100f, (r.nextFloat()-0.5f)*100f), new Vector3(r.nextFloat()-0.5f, r.nextFloat()-0.5f, r.nextFloat()-0.5f), new Quaternion(0,0,0,1f), new Quaternion().setFromAxis((r.nextFloat()-0.5f)/6.0f,(r.nextFloat()-0.5f)/6.0f,(r.nextFloat()-0.5f)/6.0f,(r.nextFloat()-0.5f)/6.0f), "ROCK", ""));
+//        }
 
         tl = System.currentTimeMillis();
         System.out.println("Starting " +  threadName );
@@ -166,13 +170,12 @@ public class LogicThread extends Thread{
 
         for(Entity ent : entities){
 
-            ent.getPos().mulAdd(ent.getVel(), dt);
             ent.getVel().mulAdd(ent.getAcc(), dt).mulAdd(ent.getThrust().mul(ent.getAngle()), dt);
+            ent.getPos().mulAdd(ent.getVel(), dt);
 
-            /*ent.getAngle().mul(ent.getAngvel()).nor();
-            ent.getAngvel().mul(ent.getAngacc()).mul(ent.getAngThrust());*/
+            ent.getAngvel().mul(ent.getAngacc().mul(ent.getAngThrust().exp(dt)).exp(dt));
             ent.getAngle().mul(ent.getAngvel()).nor();
-            ent.getAngvel().mul(ent.getAngacc()).mul(ent.getAngThrust());
+
 
             ent.updateComponents();
 
@@ -180,7 +183,7 @@ public class LogicThread extends Thread{
             //TODO: Replace this segment with a stabilizer that also similarly gates Acceleration, Angular momentum, etc regulated by an ingame computer
             if(ent.getVel().isZero(0.001f) && ent.getThrust().isZero(0.001f)){
 
-                // NOTE that this is not scaled to dt so as performance changes, evidently so will global freezing.
+                // NOTE that this is not scaled to dt so as performance changes, evidently so will the heat death of the universe.
                 ent.getVel().scl(0.9999999f);  //magic deceleration constant
 
                 if(ent.getVel().isZero(0.0000001f)){

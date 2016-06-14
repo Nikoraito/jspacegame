@@ -29,13 +29,13 @@ public class Entity{
     private volatile Vector3 position;       // Physics shit used in sectors.
     private Vector3 velocity;       //  "I wanna get a fucking sleeve."
     private Vector3 acceleration;   //      "You got this tiny one on your arm and you fuckin cried"
-    private volatile Quaternion angle;       //
+    private volatile Quaternion angle;
     private Quaternion angvel;      //
     private Quaternion angacc;      //
 
 
     //
-    private Vector3 thrust;         // Forces applied from the entity to the entity, while velocity and acceleration are the TOTAL.
+    private Vector3 thrust;         // Impulse forces applied from the entity to the entity, while velocity and acceleration are the TOTAL.
     private Vector3 angThrust;      // Both can drop in and out without affecting external forces, exempli gratia gravity and explosive forces.
                                     // AngThrust is applied as a Vector3 because it interfaces with the player, and is also relative to the current rotation of the entity.
     private Quaternion angThrustq;
@@ -71,26 +71,10 @@ public class Entity{
         );
     }
 
-    public Entity(Vector3 p, Quaternion a, String name, String modelName){
-        this(
-                p,  new Vector3(),      new Vector3(),
-                a,  new Quaternion(),   new Quaternion(),
-                name, modelName
-        );
-    }
-
-    public Entity(Vector3 p, Vector3 v, Quaternion a, Quaternion av, String name, String modelName){
-        this(   p,  v,  new Vector3(),
-                a,  av, new Quaternion(),
-                name, modelName
-        );
-    }
-
     public Entity(Vector3 p, Vector3 v, Vector3 la, Quaternion a, Quaternion av, Quaternion aa, String name, String modelName){
 
         this.name = name;
-        filename = name + idNumber + ".edf";
-        //
+        this.filename = name + idNumber + ".edf";
         this.modelName = modelName;
         controller = new Controller();
         position = p;
@@ -107,6 +91,21 @@ public class Entity{
 
     }
 
+    public Entity(Vector3 p, Quaternion a, String name, String modelName){
+        this(
+                p,  new Vector3(),      new Vector3(),
+                a,  new Quaternion(),   new Quaternion(),
+                name, modelName
+        );
+    }
+
+    public Entity(Vector3 p, Vector3 v, Quaternion a, Quaternion av, String name, String modelName){
+        this(   p,  v,  new Vector3(),
+                a,  av, new Quaternion(),
+                name, modelName
+        );
+    }
+
     public void setPos(Vector3 p){
         position = p;
     }
@@ -121,19 +120,16 @@ public class Entity{
     public void setAcc(Vector3 a){
         acceleration = a;
     }
-    //public synchronized void setAngle(Quaternion a){
     public void setAngle(Quaternion a){
         angle = a;
     }
-    //public synchronized void setAngvel(Quaternion av){
     public void setAngvel(Quaternion av){
         angvel = av;
     }
-//    public synchronized void setAngacc(Quaternion aa){
     public void setAngacc(Quaternion aa){
         angacc = aa;
     }
-//    public synchronized Vector3 getPos(){
+
     public Vector3 getPos(){
         return position;
     }
@@ -217,17 +213,16 @@ public class Entity{
     }
 
     public void applyAngForce(float x, float y, float z, float w){
-        angThrustq.mul(x/mass, y/mass, z/mass, w/mass);
+        angThrustq.mul(x, y, z, w).exp(1/mass);
     }
     public void applyAngForce(Quaternion q){
-        angThrustq.mul(q);
+        angThrustq.mul(q).exp(1/mass);
     }
     public void applyAngForce(float x, float y, float z){
         angThrust.add(x/mass, y/mass, z/mass);
     }
 
 
-    //public synchronized void updateComponents(){
     public void updateComponents(){
         if(controller != null){
             controller.position.set(position).add(controller.offset);
@@ -235,7 +230,7 @@ public class Entity{
 
         for (int i = 0; i < components.size; i++){
             components.get(i).position.set(position).add(components.get(i).offset);
-            components.get(i).angle.set(angle).add(components.get(i).offsetAngle);
+            components.get(i).angle.set(angle).mul(components.get(i).offsetAngle);
         }
 
     }

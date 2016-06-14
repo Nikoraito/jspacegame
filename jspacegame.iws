@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" line="138" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" line="195" />
+    <bookmark url="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" line="142" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" line="198" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85291eae-4915-4dd5-a83e-0ea2a0be5051" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Triggerable.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj11818470.edf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj14844786.edf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj7449745.edf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj8508335.edf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj9232596.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj10003384.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj10340107.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj1042393.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj1136553.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj11909002.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj14432581.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj14722102.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj2554434.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj3742147.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj5062758.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj761118.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/Videj7835556.edf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/JSpaceGame.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/JSpaceGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/LogicThread.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/LogicThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/Player.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/Component.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/Component.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/Entity.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/Entity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/comp/types/Fixed.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/comp/types/Fixed.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/PlayerController.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/entities/PlayerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/Videj221146.edf" afterPath="$PROJECT_DIR$/core/assets/entities/Videj221146.edf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/sectors/0.0.0.3sf" afterPath="$PROJECT_DIR$/core/assets/sectors/0.0.0.3sf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
@@ -24,7 +31,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Component.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Component.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/Fixed.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/Fixed.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jspacegame.iws" afterPath="$PROJECT_DIR$/jspacegame.iws" />
     </list>
     <ignored path="jspacegame.iws" />
@@ -88,14 +95,14 @@
     <favorites_list name="jspacegame" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50239235">
+    <splitter split-orientation="horizontal" split-proportion="0.5925926">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="JSpaceGame.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="146">
-                  <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+                <state relative-caret-position="1024">
+                  <caret line="147" column="26" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -103,27 +110,38 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LogicThread.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-631">
-                  <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#2362#2363#0" expanded="true" />
-                    <element signature="e#2384#2385#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="423">
-                  <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+                <state relative-caret-position="425">
+                  <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LogicThread.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="59" column="291" selection-start-line="59" selection-start-column="291" selection-end-line="59" selection-end-column="291" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Random.java" pinned="false" current-in-tab="false">
+            <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Random.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-5214">
+                  <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#3504#3505#0" expanded="true" />
+                    <element signature="e#3562#3563#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -136,8 +154,8 @@
           <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Controller.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#541#542#0" expanded="true" />
@@ -150,18 +168,8 @@
           <file leaf-file-name="Component.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Component.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Quaternion.java" pinned="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/math/Quaternion.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-4490">
-                  <caret line="502" column="21" selection-start-line="502" selection-start-column="21" selection-end-line="502" selection-end-column="21" />
+                <state relative-caret-position="153">
+                  <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -170,23 +178,23 @@
           <file leaf-file-name="Entity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+                <state relative-caret-position="304">
+                  <caret line="221" column="38" selection-start-line="221" selection-start-column="38" selection-end-line="221" selection-end-column="38" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#Entity#1;class#Entity#0" expanded="false" />
-                    <element signature="e#6075#6076#0" expanded="true" />
-                    <element signature="e#6113#6114#0" expanded="true" />
-                    <element signature="e#6320#6321#0" expanded="true" />
-                    <element signature="e#6360#6361#0" expanded="true" />
-                    <element signature="e#6514#6515#0" expanded="true" />
-                    <element signature="e#6562#6563#0" expanded="true" />
-                    <element signature="e#6710#6711#0" expanded="true" />
-                    <element signature="e#6772#6773#0" expanded="true" />
-                    <element signature="e#6817#6818#0" expanded="true" />
-                    <element signature="e#6850#6851#0" expanded="true" />
-                    <element signature="e#6908#6909#0" expanded="true" />
-                    <element signature="e#6961#6962#0" expanded="true" />
+                    <element signature="e#5856#5857#0" expanded="true" />
+                    <element signature="e#5894#5895#0" expanded="true" />
+                    <element signature="e#6101#6102#0" expanded="true" />
+                    <element signature="e#6141#6142#0" expanded="true" />
+                    <element signature="e#6295#6296#0" expanded="true" />
+                    <element signature="e#6343#6344#0" expanded="true" />
+                    <element signature="e#6491#6492#0" expanded="true" />
+                    <element signature="e#6545#6546#0" expanded="true" />
+                    <element signature="e#6590#6591#0" expanded="true" />
+                    <element signature="e#6635#6636#0" expanded="true" />
+                    <element signature="e#6693#6694#0" expanded="true" />
+                    <element signature="e#6746#6747#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -195,12 +203,12 @@
           <file leaf-file-name="PlayerController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+                <state relative-caret-position="422">
+                  <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1078#1079#0" expanded="true" />
-                    <element signature="e#1108#1109#0" expanded="true" />
+                    <element signature="e#1384#1385#0" expanded="true" />
+                    <element signature="e#1414#1415#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -251,15 +259,15 @@
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Constants.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/XVector3.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Connection.java" />
-        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Weapon.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Triggerable.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/Fixed.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Component.java" />
-        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" />
-        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" />
       </list>
     </option>
   </component>
@@ -858,23 +866,24 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Analyze Dataflow from" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3488372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19556025" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.083333336" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26744187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52114165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1871036" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -901,7 +910,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="34" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -914,31 +923,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Projectile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/ApplicationAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Sector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1241">
@@ -954,18 +938,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Entity#1;class#Entity#0" expanded="false" />
-            <element signature="e#6075#6076#0" expanded="true" />
-            <element signature="e#6113#6114#0" expanded="true" />
-            <element signature="e#6320#6321#0" expanded="true" />
-            <element signature="e#6360#6361#0" expanded="true" />
-            <element signature="e#6514#6515#0" expanded="true" />
-            <element signature="e#6562#6563#0" expanded="true" />
-            <element signature="e#6710#6711#0" expanded="true" />
-            <element signature="e#6772#6773#0" expanded="true" />
-            <element signature="e#6817#6818#0" expanded="true" />
-            <element signature="e#6850#6851#0" expanded="true" />
-            <element signature="e#6908#6909#0" expanded="true" />
-            <element signature="e#6961#6962#0" expanded="true" />
+            <element signature="e#5856#5857#0" expanded="true" />
+            <element signature="e#5894#5895#0" expanded="true" />
+            <element signature="e#6101#6102#0" expanded="true" />
+            <element signature="e#6141#6142#0" expanded="true" />
+            <element signature="e#6295#6296#0" expanded="true" />
+            <element signature="e#6343#6344#0" expanded="true" />
+            <element signature="e#6491#6492#0" expanded="true" />
+            <element signature="e#6545#6546#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#6635#6636#0" expanded="true" />
+            <element signature="e#6693#6694#0" expanded="true" />
+            <element signature="e#6746#6747#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1037,13 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="421" column="16" selection-start-line="421" selection-start-column="16" selection-end-line="421" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1134,13 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.2/888ddbf116b94ab6dbe07178e035091031425b67/gdx-backend-lwjgl-1.9.2-sources.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/XVector3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1187,16 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/math/Vector3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding>
-            <element signature="e#4440#4441#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Triggerable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1221,22 +1181,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/graphics/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1432">
+          <caret line="122" column="12" selection-start-line="122" selection-start-column="12" selection-end-line="122" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/graphics/PerspectiveCamera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/math/Vector3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="380" column="35" selection-start-line="380" selection-start-column="35" selection-end-line="380" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="422">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1384#1385#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.2/888ddbf116b94ab6dbe07178e035091031425b67/gdx-backend-lwjgl-1.9.2-sources.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-267">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/graphics/g3d/utils/ModelBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="414" column="17" selection-start-line="414" selection-start-column="17" selection-end-line="414" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/math/Quaternion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="651" column="27" selection-start-line="233" selection-start-column="26" selection-end-line="233" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#541#542#0" expanded="true" />
@@ -1245,10 +1253,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5214">
+          <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+          <folding>
+            <element signature="e#3504#3505#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="221" column="38" selection-start-line="221" selection-start-column="38" selection-end-line="221" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Entity#1;class#Entity#0" expanded="false" />
+            <element signature="e#5856#5857#0" expanded="true" />
+            <element signature="e#5894#5895#0" expanded="true" />
+            <element signature="e#6101#6102#0" expanded="true" />
+            <element signature="e#6141#6142#0" expanded="true" />
+            <element signature="e#6295#6296#0" expanded="true" />
+            <element signature="e#6343#6344#0" expanded="true" />
+            <element signature="e#6491#6492#0" expanded="true" />
+            <element signature="e#6545#6546#0" expanded="true" />
+            <element signature="e#6590#6591#0" expanded="true" />
+            <element signature="e#6635#6636#0" expanded="true" />
+            <element signature="e#6693#6694#0" expanded="true" />
+            <element signature="e#6746#6747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="198" column="9" selection-start-line="198" selection-start-column="9" selection-end-line="198" selection-end-column="9" />
+        <state relative-caret-position="1024">
+          <caret line="147" column="26" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1257,59 +1317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-631">
-          <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2362#2363#0" expanded="true" />
-            <element signature="e#2384#2385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/b6c7422c6740f86a9a84fdcbc4c62a1f46db317d/gdx-1.9.2-sources.jar!/com/badlogic/gdx/math/Quaternion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4490">
-          <caret line="502" column="21" selection-start-line="502" selection-start-column="21" selection-end-line="502" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Entity#1;class#Entity#0" expanded="false" />
-            <element signature="e#6075#6076#0" expanded="true" />
-            <element signature="e#6113#6114#0" expanded="true" />
-            <element signature="e#6320#6321#0" expanded="true" />
-            <element signature="e#6360#6361#0" expanded="true" />
-            <element signature="e#6514#6515#0" expanded="true" />
-            <element signature="e#6562#6563#0" expanded="true" />
-            <element signature="e#6710#6711#0" expanded="true" />
-            <element signature="e#6772#6773#0" expanded="true" />
-            <element signature="e#6817#6818#0" expanded="true" />
-            <element signature="e#6850#6851#0" expanded="true" />
-            <element signature="e#6908#6909#0" expanded="true" />
-            <element signature="e#6961#6962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="59" column="291" selection-start-line="59" selection-start-column="291" selection-end-line="59" selection-end-column="291" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -73,36 +73,36 @@ public class JSpaceGame implements ApplicationListener{
 
         //Graphical Initialization
         environment = new Environment();
-        environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.4f, 0.4f, 0.4f, 1f));
+        environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.5f, 0.5f, 0.5f, 0.75f));
         modelBatch = new ModelBatch();
 
         //Player initialization -- TODO:
         //Initialize the player's Camera. SET THIS TO NULL IN DISPOSE.
 
+        System.out.println("Initializing player...");
+        System.out.println("    > Camera");
         cam = new PerspectiveCamera(70, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-
-        cam.lookAt(new Vector3(0, 0, 0));
         cam.near    = 0.025f;
         cam.far     = g.DIM_SCALE*2f;
+        cam.up.set(0,1,0);
+        cam.direction.set(0,0,1);
 
         camController = new CameraInputController(cam);
 
+        System.out.println("    > Entity");
         me = new Player();
-        me.entity = g.getEntByID(221146L);
-        me.pc = new PlayerController(new Vector3(0,1,-3), new Quaternion(), camController, cam);
+        me.entity = g.getEntByID(4359078L);
+        me.pc = new PlayerController(new Vector3(0,1,-3), new Quaternion(0, 0, 0, 1), camController, cam);
         me.entity.setController(me.pc);
 
 
         players.add(me);
 
-        cam.lookAt(me.entity.getPos());
+        //cam.lookAt(me.entity.getPos());
         cam.update();
 
         Gdx.input.setInputProcessor(camController);
-
-        //Just to make sure all that happened.
-        System.out.println("Success, biiiitch");
-
+        System.out.println("Initialization succeeded!");
 
     }
 
@@ -123,38 +123,41 @@ public class JSpaceGame implements ApplicationListener{
                     entities.get(i).getAngle()
             );
 
-
-
         }
 
 
 
         me.updateCam();
 
+        spriteBatch.begin();
+        font.draw(spriteBatch,
+                "AngThrust: " + me.entity.getAngThrust()
+                        + "\n g.dt " + g.dt + "\n " + g.tl + "\n" + g.count
+                        + "\n tf:  " + me.entity.getModelInstance().transform
+
+                        + "\n ANGLE: yl" + me.entity.getAngle().getYaw()
+                        + "\n pl" + me.entity.getAngle().getRoll()
+                        + "\n rl" + me.entity.getAngle().getPitch()
+
+                        //+ "\nCamPos" + me.pc.getCam().position
+                        //+ "\nCamOffs" + me.pc.getOffset()
+                        //+ "\nCamDir" + me.pc.getCam().direction
+                        + "\nCamUp" + me.pc.getCam().up
+                        + "\nPOS:" + me.entity.getPos().x + "\n   " + me.entity.getPos().y + "\n   " + me.entity.getPos().z
+                        + "\nVEL:" + me.entity.getVel().x + "\n   " + me.entity.getVel().y + "\n   " + me.entity.getVel().z
+                        //+ "\nANG:" + me.entity.getAngle().x + "\n   " + me.entity.getAngle().y + "   " + me.entity.getAngle().z + "\n   " + me.entity.getAngle().w
+                        //+ "\nANGVEL:" + me.entity.getAngvel().x + "\n   " + me.entity.getAngvel().y + "   " + me.entity.getAngvel().z + "\n   " + me.entity.getAngvel().w
+                //+ "\nANGACC:" + me.entity.getAngacc().x + "\n   " + me.entity.getAngacc().y + "   " + me.entity.getAngacc().z + "\n   " + me.entity.getAngacc().w
+
+                , 0, 460);
+
+        spriteBatch.end();
+
         modelBatch.begin(cam);
         modelBatch.render(instances, environment);
         modelBatch.end();
 
-        spriteBatch.begin();
-        font.draw(spriteBatch,
-                "AngThrust: " + me.entity.getAngThrust()
-                + "\n g.dt " + g.dt + "\n " + g.tl + "\n" + g.count
-                + "\n tf:  " + me.entity.getModelInstance().transform
 
-                + "\n ANGLE: yl" + me.entity.getAngle().getYaw()
-                + "\n pl" + me.entity.getAngle().getRoll()
-                + "\n rl" + me.entity.getAngle().getPitch()
-
-                + "\nPOS:" + me.entity.getPos().x + "\n   " + me.entity.getPos().y + "\n   " + me.entity.getPos().z
-                + "\nPOScam:" + me.pc.getPosition()
-                + "\nVEL:" + me.entity.getVel().x + "\n   " + me.entity.getVel().y + "\n   " + me.entity.getVel().z
-                + "\nANG:" + me.entity.getAngle().x + "\n   " + me.entity.getAngle().y + "   " + me.entity.getAngle().z + "\n   " + me.entity.getAngle().w
-                //+ "\nANGVEL:" + me.entity.getAngvel().x + "\n   " + me.entity.getAngvel().y + "   " + me.entity.getAngvel().z + "\n   " + me.entity.getAngvel().w
-                //+ "\nANGACC:" + me.entity.getAngacc().x + "\n   " + me.entity.getAngacc().y + "   " + me.entity.getAngacc().z + "\n   " + me.entity.getAngacc().w
-
-                ,0, 460);
-
-        spriteBatch.end();
     }
 
     @Override
@@ -209,7 +212,7 @@ public class JSpaceGame implements ApplicationListener{
             System.out.println(" > WARNING: NO MODEL \'" + modelName + "\' -- USING DEFAULT"); //Establish default .obj file?
             ModelBuilder mb = new ModelBuilder();
             m = mb.createBox(1f, 1f, 1f,
-                    new Material(ColorAttribute.createDiffuse(Color.GREEN)),
+                    new Material(ColorAttribute.createDiffuse(Color.WHITE)),
                     VertexAttributes.Usage.Position | VertexAttributes.Usage.Normal);
         }
         return m;

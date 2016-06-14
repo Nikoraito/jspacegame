@@ -10,31 +10,35 @@ import com.badlogic.gdx.math.Vector3;
  */
 public class PlayerController extends Controller{
 
+    public Vector3 camUp;  //Initial orientation vectors of Camera
+    public Vector3 camDir;
 
     PerspectiveCamera cam = null;
     CameraInputController camController = null;
 
-    public PlayerController(){
-        super();
+
+    /**
+     * Head Constructor for PlayerController with an attached PerspectiveCamera and CameraInputController
+     * @param offset
+     * @param angle
+     * @param cc
+     * @param pc
+     */
+    public PlayerController(Vector3 offset, Quaternion angle, CameraInputController cc, PerspectiveCamera pc){
+        this.camController = cc;
+        this.cam = pc;
+        this.offset = offset;
+        this.angle = angle;
+
+        camUp = new Vector3().set(pc.up);
+        camDir = new Vector3().set(pc.direction);
 
         mass = 0;
         health = 0;
-    }
-
-    public PlayerController(Vector3 offset, Quaternion angle, CameraInputController cc, PerspectiveCamera pc){
-        this(cc, pc);
-        this.offset = offset;
-        this.angle = angle;
     }
 
     public PlayerController(CameraInputController cc, PerspectiveCamera pc){
-        super();
-
-        mass = 0;
-        health = 0;
-
-        this.cam = pc;
-        this.camController = cc;
+        this(new Vector3(), new Quaternion(), cc, pc);
     }
 
     public PerspectiveCamera getCam(){
