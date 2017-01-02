@@ -18,7 +18,7 @@ public class Fixed{
     public Fixed(byte a, byte b){
         val = new byte[2];
         val[0] = a;
-        val[0] = b;
+        val[1] = b;
     }
 
     public Fixed(int a, int b){
@@ -26,7 +26,7 @@ public class Fixed{
     }
 
     public Fixed(float f){
-        this((byte)Math.round(f), (byte)((f - Math.round(f))*256));
+        this((byte)Math.round(f), (byte)((f - Math.round(f))*127));
         //Will produce weird results if b is negative. Fun.
     }
 

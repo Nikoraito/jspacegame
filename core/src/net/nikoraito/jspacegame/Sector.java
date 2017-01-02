@@ -22,7 +22,7 @@ public class Sector{
         this.posx = posx;
         this.posy = posy;
         this.posz = posz;
-        entIDs = new Array<>();
+        entIDs = new Array<String>();
         this.filename = posx + "." + posy + "." + posz + ".3sf"; //Coordinates + .three-dimensional-sector-file
 
     }

@@ -15,7 +15,6 @@ import com.badlogic.gdx.graphics.g3d.attributes.ColorAttribute;
 import com.badlogic.gdx.graphics.g3d.loader.ObjLoader;
 import com.badlogic.gdx.graphics.g3d.utils.CameraInputController;
 import com.badlogic.gdx.graphics.g3d.utils.ModelBuilder;
-import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Quaternion;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.physics.bullet.Bullet;
@@ -28,10 +27,18 @@ import net.nikoraito.jspacegame.entities.*;
     If I define a meter as 1.0 units, going at the speed of light ingame, (299792458 m/s)
     it would take 1.1350598*10^30 seconds
             = 3.9*10^23 years
-    to get from the coordinate 0,0,0 to the point where you would reach the overflow point.*/
+    to get from the coordinate 0,0,0 to the point where you would reach the overflow point.
+
+    However, because of loss of decimal precision over distance from 0, a craft traveling outward from the center of the
+     universe would experience errorless compressions. Thus, coordinate space should be localized to the player's current
+     position. Thus, the player's position as it renders on a client should be (0,0,0),
+
+
+    */
 
 
 public class JSpaceGame implements ApplicationListener{
+
     BitmapFont font;
     SpriteBatch spriteBatch;
 
@@ -49,6 +56,8 @@ public class JSpaceGame implements ApplicationListener{
 
     Player me; //The current player! Added to the Array at some point but used by this thread to negotiate connecting user inputs with the player object.
 
+
+
     @Override
     public void create(){
 
@@ -57,11 +66,13 @@ public class JSpaceGame implements ApplicationListener{
         // 1.0f in vectors = a meter
         // 1.0f in time = a second
         // 1 in mass = 1 kilogram
+        // 1.0f a full rotation in one direction
 
         font = new BitmapFont();
         spriteBatch = new SpriteBatch();
 
         font.setColor(Color.YELLOW);
+
 
         g = new LogicThread();  // Initialize the Logical and Physics part of the game
         g.start();              //
@@ -76,8 +87,7 @@ public class JSpaceGame implements ApplicationListener{
         environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.5f, 0.5f, 0.5f, 0.75f));
         modelBatch = new ModelBatch();
 
-        //Player initialization -- TODO:
-        //Initialize the player's Camera. SET THIS TO NULL IN DISPOSE.
+        //Player initialization
 
         System.out.println("Initializing player...");
         System.out.println("    > Camera");
@@ -135,16 +145,16 @@ public class JSpaceGame implements ApplicationListener{
                         + "\n g.dt " + g.dt + "\n " + g.tl + "\n" + g.count
                         + "\n tf:  " + me.entity.getModelInstance().transform
 
-                        + "\n ANGLE: yl" + me.entity.getAngle().getYaw()
-                        + "\n pl" + me.entity.getAngle().getRoll()
-                        + "\n rl" + me.entity.getAngle().getPitch()
+                        //+ "\n ANGLE: yl" + me.entity.getAngle().getYaw()
+                        //+ "\n pl" + me.entity.getAngle().getRoll()
+                        //+ "\n rl" + me.entity.getAngle().getPitch()
 
-                        //+ "\nCamPos" + me.pc.getCam().position
-                        //+ "\nCamOffs" + me.pc.getOffset()
-                        //+ "\nCamDir" + me.pc.getCam().direction
+                        + "\nCamPos" + me.pc.getCam().position
+                        + "\nCamOffs" + me.pc.getOffset()
+                        + "\nCamDir" + me.pc.getCam().direction
                         + "\nCamUp" + me.pc.getCam().up
                         + "\nPOS:" + me.entity.getPos().x + "\n   " + me.entity.getPos().y + "\n   " + me.entity.getPos().z
-                        + "\nVEL:" + me.entity.getVel().x + "\n   " + me.entity.getVel().y + "\n   " + me.entity.getVel().z
+                        //+ "\nVEL:" + me.entity.getVel().x + "\n   " + me.entity.getVel().y + "\n   " + me.entity.getVel().z
                         //+ "\nANG:" + me.entity.getAngle().x + "\n   " + me.entity.getAngle().y + "   " + me.entity.getAngle().z + "\n   " + me.entity.getAngle().w
                         //+ "\nANGVEL:" + me.entity.getAngvel().x + "\n   " + me.entity.getAngvel().y + "   " + me.entity.getAngvel().z + "\n   " + me.entity.getAngvel().w
                 //+ "\nANGACC:" + me.entity.getAngacc().x + "\n   " + me.entity.getAngacc().y + "   " + me.entity.getAngacc().z + "\n   " + me.entity.getAngacc().w
@@ -189,9 +199,9 @@ public class JSpaceGame implements ApplicationListener{
     }
 
     public void initInstances(){
-        instances = new Array<>();
+        instances = new Array<ModelInstance>();
 
-        models = new ArrayMap<>();
+        models = new ArrayMap<String, Model>();
 
         for (int i = 0; i < entities.size; i++){
             if(!models.containsKey(entities.get(i).modelName)){
@@ -206,7 +216,7 @@ public class JSpaceGame implements ApplicationListener{
         Model m;
         if (modelName.length() >= 1){
             ModelLoader l = new ObjLoader();
-            m = l.loadModel(Gdx.files.local("models/"+modelName));
+            m = l.loadModel(Gdx.files.local("core/assets/models/"+modelName));
         }
         else {
             System.out.println(" > WARNING: NO MODEL \'" + modelName + "\' -- USING DEFAULT"); //Establish default .obj file?

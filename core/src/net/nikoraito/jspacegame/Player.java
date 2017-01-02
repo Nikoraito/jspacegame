@@ -52,7 +52,7 @@ public class Player{
             } if(Gdx.input.isKeyPressed(Input.Keys.D)){
                 entity.addThrust(-1f, 0, 0);
             } if(Gdx.input.isKeyPressed(Input.Keys.W)){
-                entity.addThrust(0, 0, 1000f);
+                entity.addThrust(0, 0, 1f);
             } if(Gdx.input.isKeyPressed(Input.Keys.S)){
                 entity.addThrust(0, 0, -1f);
             } if(Gdx.input.isKeyPressed(Input.Keys.E)){
@@ -77,9 +77,9 @@ public class Player{
 
             //TODO: Find a way to do this without using dt here. Or maybe just do it with dt
             if(Gdx.input.isKeyPressed(Input.Keys.X)){
-                entity.getVel().scl(0.9999f);
+                entity.getVel().scl(0.999f);
             } if(Gdx.input.isKeyPressed(Input.Keys.COMMA)){
-                entity.getAngvel().exp(0.9999f);
+                entity.getAngvel().exp(0.999f);
             }
         }
     }

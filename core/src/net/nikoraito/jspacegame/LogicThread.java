@@ -96,7 +96,7 @@ public class LogicThread extends Thread{
 
     public void saveEntity(Entity e){
         System.out.printf("Saving %s ...\n", e.filename);
-        file = Gdx.files.local("entities/" + e.filename);
+        file = Gdx.files.local("core/assets/entities/" + e.filename);
         e.setModelInstance(null);   //Conveniently, also nullifies the entry in instances!
         e.setController(null);      // Good? Bad???
 
@@ -106,14 +106,14 @@ public class LogicThread extends Thread{
 
     public void saveSector(Sector s){
         System.out.printf("Saving %s ...\n", s.filename);
-        file = Gdx.files.local("sectors/" + s.filename);
+        file = Gdx.files.local("core/assets/sectors/" + s.filename);
         file.writeString(j.toJson(s), false);
         System.out.print(" > done. \n");
     }
 
     public void loadEntity(String filename){
         System.out.println("Loading " + filename);
-        file = Gdx.files.local("entities/" + filename);
+        file = Gdx.files.local("core/assets/entities/" + filename);
         if(file.exists()){
             Entity e = j.fromJson(Entity.class, file.readString());
             System.out.println(" > Found " + e.filename);
@@ -133,7 +133,7 @@ public class LogicThread extends Thread{
 
         else{
             Sector s;
-            file = Gdx.files.local("sectors/" + x + "." + y + "." + z + ".3sf");
+            file = Gdx.files.local("core/assets/sectors/" + x + "." + y + "." + z + ".3sf");
 
             if(file.exists()){
                 s = j.fromJson(Sector.class, file.readString());
