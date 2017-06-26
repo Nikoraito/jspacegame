@@ -7,176 +7,160 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e013bd27-3315-4efd-a3bf-314431bc258a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameHeadless.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Emitter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Computer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Core.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Hub.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Input.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/L3o.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Memory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Module.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/ByteRingBuffer.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/XVector3.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Triggerable.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Triggerable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/JSpaceGame.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/JSpaceGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/LogicThread.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/LogicThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/Player.class" afterPath="$PROJECT_DIR$/out/production/core/net/nikoraito/jspacegame/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11392481.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11392481.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11731184.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11731184.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11738864.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11738864.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11743984.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11743984.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11752432.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11752432.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11759088.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11759088.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11764464.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11764464.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11770352.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11770352.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11775984.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11775984.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11781360.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11781360.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11786224.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11786224.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11791856.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK11791856.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12849462.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12849462.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12854070.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12854070.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12858934.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12858934.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12862774.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12862774.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12863798.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12863798.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12868918.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12868918.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12881718.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12881718.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12889398.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12889398.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12895030.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12895030.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12900150.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12900150.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12904758.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12904758.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12909622.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK12909622.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14811844.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14811844.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14817732.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14817732.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14824644.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14824644.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14830788.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14830788.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14840260.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14840260.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14845380.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14845380.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14848708.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14848708.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14851012.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14851012.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14857156.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14857156.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14862276.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14862276.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14867140.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14867140.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14868932.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK14868932.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15732113.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15732113.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15737745.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15737745.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15745681.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15745681.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15746705.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15746705.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15751825.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15751825.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15757457.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15757457.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15763601.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15763601.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15769745.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15769745.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15770769.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15770769.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15778449.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15778449.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15785873.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15785873.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15792017.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK15792017.edf" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11392481.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11731184.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11738864.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11743984.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11752432.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11759088.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11764464.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11770352.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11775984.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11781360.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11786224.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK11791856.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12849462.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12854070.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12858934.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12862774.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12863798.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12868918.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12881718.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12889398.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12895030.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12900150.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12904758.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK12909622.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14811844.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14817732.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14824644.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14830788.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14840260.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14845380.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14848708.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14851012.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14857156.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14862276.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14867140.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK14868932.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15732113.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15737745.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15745681.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15746705.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15751825.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15757457.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15763601.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15769745.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15770769.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15778449.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15785873.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK15792017.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3809349.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3815237.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3816773.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3818309.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3825989.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3828549.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3843653.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3849285.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3854661.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3862597.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3864901.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK4339622.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK4348326.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK4355238.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK4361126.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6292414.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6298046.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6303166.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6308030.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6312638.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6313918.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6317758.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6333630.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6341566.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6347198.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6352574.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6389438.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7474716.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7480860.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7487516.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7493404.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7499548.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7505180.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7510556.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7511324.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7519772.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7525404.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7530524.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7532316.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7541825.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7550273.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7550529.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7556161.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7560001.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7561281.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7569729.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7579969.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7581761.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7589185.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7598145.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7601985.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7810286.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7818478.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7824110.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7838190.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8985980.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8986748.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8992636.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8993916.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8996220.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9005436.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9015676.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9026172.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9030012.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9034364.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9042300.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9070251.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9095851.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9120427.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9128875.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9137067.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9139371.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9145259.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9149867.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9155243.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9159851.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9166507.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9172395.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9438350.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9442190.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9450126.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9458318.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9467790.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9468046.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9475982.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9479310.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9483662.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9490318.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9491342.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9499278.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9723305.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9731497.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9743017.edf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9749929.edf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jspacegame_jar/jspacegame.jar" afterPath="$PROJECT_DIR$/build/jspacegame_jar/jspacegame.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/net/nikoraito/jspacegame/JSpaceGame.class" afterPath="$PROJECT_DIR$/core/build/classes/main/net/nikoraito/jspacegame/JSpaceGame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/net/nikoraito/jspacegame/LogicThread.class" afterPath="$PROJECT_DIR$/core/build/classes/main/net/nikoraito/jspacegame/LogicThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/net/nikoraito/jspacegame/Player.class" afterPath="$PROJECT_DIR$/core/build/classes/main/net/nikoraito/jspacegame/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3807813.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3807813.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3809349.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3809349.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3815237.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3815237.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3816773.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3816773.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3818309.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3818309.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3825989.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3825989.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3828549.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3828549.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3843653.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3843653.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3849285.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3849285.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3854661.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3854661.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3862597.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3862597.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK3864901.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK3864901.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK4339622.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK4339622.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK4348326.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK4348326.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK4355238.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK4355238.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK4361126.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK4361126.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6292414.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6292414.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6298046.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6298046.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6303166.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6303166.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6308030.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6308030.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6312638.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6312638.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6313918.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6313918.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6317758.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6317758.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6333630.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6333630.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6341566.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6341566.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6347198.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6347198.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6352574.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6352574.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK6389438.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK6389438.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7474716.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7474716.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7480860.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7480860.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7487516.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7487516.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7493404.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7493404.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7499548.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7499548.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7505180.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7505180.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7510556.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7510556.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7511324.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7511324.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7519772.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7519772.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7525404.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7525404.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7530524.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7530524.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7532316.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7532316.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7541825.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7541825.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7550273.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7550273.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7550529.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7550529.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7556161.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7556161.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7560001.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7560001.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7561281.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7561281.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7569729.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7569729.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7579969.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7579969.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7581761.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7581761.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7589185.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7589185.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7598145.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7598145.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7601985.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7601985.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7810286.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7810286.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7818478.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7818478.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7824110.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7824110.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK7838190.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK7838190.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8985980.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK8985980.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8986748.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK8986748.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8992636.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK8992636.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8993916.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK8993916.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK8996220.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK8996220.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9005436.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9005436.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9015676.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9015676.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9026172.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9026172.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9030012.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9030012.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9034364.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9034364.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9042300.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9042300.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9070251.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9070251.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9095851.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9095851.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9120427.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9120427.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9128875.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9128875.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9137067.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9137067.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9139371.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9139371.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9145259.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9145259.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9149867.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9149867.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9155243.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9155243.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9159851.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9159851.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9166507.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9166507.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9172395.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9172395.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9438350.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9438350.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9442190.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9442190.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9450126.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9450126.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9458318.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9458318.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9467790.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9467790.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9468046.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9468046.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9475982.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9475982.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9479310.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9479310.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9483662.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9483662.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9490318.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9490318.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9491342.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9491342.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9499278.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9499278.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9723305.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9723305.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9731497.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9731497.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9743017.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9743017.edf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/ROCK9749929.edf" afterPath="$PROJECT_DIR$/core/assets/entities/ROCK9749929.edf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/assets/entities/Videj4359078.edf" afterPath="$PROJECT_DIR$/core/assets/entities/Videj4359078.edf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameClient.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Sector.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Sector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Connection.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Connection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/Fixed.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/types/Fixed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jspacegame.ipr" afterPath="$PROJECT_DIR$/jspacegame.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jspacegame.iws" afterPath="$PROJECT_DIR$/jspacegame.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Emitter.java" afterPath="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Emitter.java" />
     </list>
     <ignored path="jspacegame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -209,110 +193,190 @@
     <favorites_list name="jspacegame" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Triggerable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Triggerable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Computer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Computer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSpaceGame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSpaceGameClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSpaceGameHeadless.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameHeadless.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3689">
-              <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DesktopLauncher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/desktop/src/net/nikoraito/jspacegame/desktop/DesktopLauncher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.48489583">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Controller.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#541#542#0" expanded="false" />
+                    <element signature="e#626#627#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PlayerController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#1310#1311#0" expanded="false" />
+                    <element signature="e#1336#1337#0" expanded="false" />
+                    <element signature="e#1384#1385#0" expanded="false" />
+                    <element signature="e#1414#1415#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Computer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Computer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JSpaceGame.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="62">
+                  <caret line="186" column="115" selection-start-line="186" selection-start-column="115" selection-end-line="186" selection-end-column="115" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LwjglApplication.java" pinned="false" current-in-tab="false">
+            <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.2/888ddbf116b94ab6dbe07178e035091031425b67/gdx-backend-lwjgl-1.9.2-sources.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1479">
+                  <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="false" />
+                    <element signature="imports" expanded="false" />
+                    <element signature="e#1961#1971#0" expanded="false" />
+                    <element signature="e#2037#2047#0" expanded="false" />
+                    <element signature="e#2139#2158#0" expanded="false" />
+                    <element signature="e#2512#2513#0" expanded="false" />
+                    <element signature="e#2549#2550#0" expanded="false" />
+                    <element signature="e#8912#8913#0" expanded="false" />
+                    <element signature="e#8934#8935#0" expanded="false" />
+                    <element signature="e#8974#8975#0" expanded="false" />
+                    <element signature="e#8993#8994#0" expanded="false" />
+                    <element signature="e#9033#9034#0" expanded="false" />
+                    <element signature="e#9052#9053#0" expanded="false" />
+                    <element signature="e#9103#9104#0" expanded="false" />
+                    <element signature="e#9125#9126#0" expanded="false" />
+                    <element signature="e#9165#9166#0" expanded="false" />
+                    <element signature="e#9184#9185#0" expanded="false" />
+                    <element signature="e#9220#9221#0" expanded="false" />
+                    <element signature="e#9237#9238#0" expanded="false" />
+                    <element signature="e#9286#9287#0" expanded="false" />
+                    <element signature="e#9323#9324#0" expanded="false" />
+                    <element signature="e#9363#9364#0" expanded="false" />
+                    <element signature="e#9378#9379#0" expanded="false" />
+                    <element signature="e#9531#9532#0" expanded="false" />
+                    <element signature="e#9615#9616#0" expanded="false" />
+                    <element signature="e#9659#9660#0" expanded="false" />
+                    <element signature="e#9686#9687#0" expanded="false" />
+                    <element signature="e#9748#9769#0" expanded="false" />
+                    <element signature="e#10141#10142#0" expanded="false" />
+                    <element signature="e#10175#10176#0" expanded="false" />
+                    <element signature="e#11442#11443#0" expanded="false" />
+                    <element signature="e#11473#11474#0" expanded="false" />
+                    <element signature="e#11514#11515#0" expanded="false" />
+                    <element signature="e#11536#11537#0" expanded="false" />
+                    <element signature="e#11588#11671#0" expanded="false" />
+                    <element signature="e#11670#11671#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LogicThread.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="985">
+                  <caret line="270" column="34" selection-start-line="270" selection-start-column="34" selection-end-line="270" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#9601#9602#0" expanded="true" />
+                    <element signature="e#9674#9675#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Projectile.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Projectile.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Emitter.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Emitter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="JSpaceGameClient.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameClient.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1428">
+                  <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="42" />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="765">
+                  <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="LogicThread.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4335">
+                  <caret line="269" column="37" selection-start-line="269" selection-start-column="37" selection-end-line="269" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="884">
+                  <caret line="239" column="26" selection-start-line="239" selection-start-column="26" selection-end-line="239" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1246,9 +1310,12 @@
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Module.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Computer.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/comp/Core.java" />
-        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" />
-        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameClient.java" />
         <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Projectile.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Emitter.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java" />
+        <option value="$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java" />
       </list>
     </option>
   </component>
@@ -1276,7 +1343,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1289,121 +1356,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jspacegame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -1754,35 +1707,63 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1421875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14196242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14196242" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1823,25 +1804,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java</url>
-          <line>46</line>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java</url>
-          <line>54</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java</url>
-          <line>135</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java</url>
-          <line>137</line>
+          <line>154</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -1855,12 +1836,29 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3689">
+          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desktop/src/net/nikoraito/jspacegame/desktop/DesktopLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+            <element signature="e#626#627#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1869,7 +1867,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1336#1337#0" expanded="false" />
+            <element signature="e#1384#1385#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1877,7 +1881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1901,7 +1904,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1917,7 +1922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1933,7 +1937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2102,39 +2105,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="137" column="9" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.2/888ddbf116b94ab6dbe07178e035091031425b67/gdx-backend-lwjgl-1.9.2-sources.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1234">
-          <caret line="168" column="13" selection-start-line="168" selection-start-column="13" selection-end-line="168" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Sector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Projectile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Emitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -2145,26 +2119,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desktop/src/net/nikoraito/jspacegame/desktop/DesktopLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Triggerable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameHeadless.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desktop/src/net/nikoraito/jspacegame/desktop/DesktopLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Emitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java">
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="1428">
+          <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2174,7 +2171,23 @@
         <state relative-caret-position="255">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#541#542#0" expanded="false" />
+            <element signature="e#626#627#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1336#1337#0" expanded="false" />
+            <element signature="e#1384#1385#0" expanded="false" />
+            <element signature="e#1414#1415#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2187,42 +2200,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Projectile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-lwjgl/1.9.2/888ddbf116b94ab6dbe07178e035091031425b67/gdx-backend-lwjgl-1.9.2-sources.jar!/com/badlogic/gdx/backends/lwjgl/LwjglApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1961#1971#0" expanded="false" />
+            <element signature="e#2037#2047#0" expanded="false" />
+            <element signature="e#2139#2158#0" expanded="false" />
+            <element signature="e#2512#2513#0" expanded="false" />
+            <element signature="e#2549#2550#0" expanded="false" />
+            <element signature="e#8912#8913#0" expanded="false" />
+            <element signature="e#8934#8935#0" expanded="false" />
+            <element signature="e#8974#8975#0" expanded="false" />
+            <element signature="e#8993#8994#0" expanded="false" />
+            <element signature="e#9033#9034#0" expanded="false" />
+            <element signature="e#9052#9053#0" expanded="false" />
+            <element signature="e#9103#9104#0" expanded="false" />
+            <element signature="e#9125#9126#0" expanded="false" />
+            <element signature="e#9165#9166#0" expanded="false" />
+            <element signature="e#9184#9185#0" expanded="false" />
+            <element signature="e#9220#9221#0" expanded="false" />
+            <element signature="e#9237#9238#0" expanded="false" />
+            <element signature="e#9286#9287#0" expanded="false" />
+            <element signature="e#9323#9324#0" expanded="false" />
+            <element signature="e#9363#9364#0" expanded="false" />
+            <element signature="e#9378#9379#0" expanded="false" />
+            <element signature="e#9531#9532#0" expanded="false" />
+            <element signature="e#9615#9616#0" expanded="false" />
+            <element signature="e#9659#9660#0" expanded="false" />
+            <element signature="e#9686#9687#0" expanded="false" />
+            <element signature="e#9748#9769#0" expanded="false" />
+            <element signature="e#10141#10142#0" expanded="false" />
+            <element signature="e#10175#10176#0" expanded="false" />
+            <element signature="e#11442#11443#0" expanded="false" />
+            <element signature="e#11473#11474#0" expanded="false" />
+            <element signature="e#11514#11515#0" expanded="false" />
+            <element signature="e#11536#11537#0" expanded="false" />
+            <element signature="e#11588#11671#0" expanded="false" />
+            <element signature="e#11670#11671#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3689">
-          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameHeadless.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGameClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="884">
+          <caret line="239" column="26" selection-start-line="239" selection-start-column="26" selection-end-line="239" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/JSpaceGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        <state relative-caret-position="62">
+          <caret line="186" column="115" selection-start-line="186" selection-start-column="115" selection-end-line="186" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/net/nikoraito/jspacegame/LogicThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4335">
+          <caret line="269" column="37" selection-start-line="269" selection-start-column="37" selection-end-line="269" selection-end-column="37" />
           <folding />
         </state>
       </provider>

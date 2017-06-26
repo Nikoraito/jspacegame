@@ -39,16 +39,15 @@ public class Player{
 
     public void input(float dt){
         //TODO Implement thrust in the Entity
-
         //TODO Implement controls in entityController
         //TODO Feed input to EntityController here
 
-        entity.setThrust(0,0,0);    //Set thrust to nothing before each control update so that it is constant but
-        entity.setAngThrust(0,0,0);               //  instantaneous, rather than cumulative.
+        entity.setThrust(0,0,0);    //Set thrust to nothing before each control update so that it is
+        entity.setAngThrust(0,0,0); //constant but instantaneous, rather than cumulative.
 
         if(Gdx.input.isKeyPressed(Input.Keys.ANY_KEY)){
             if(Gdx.input.isKeyPressed(Input.Keys.A)){
-                entity.addThrust(1f, 0, 0);  // 0.4m / s^2
+                entity.addThrust(1f, 0, 0);  // 1m / s^2
             } if(Gdx.input.isKeyPressed(Input.Keys.D)){
                 entity.addThrust(-1f, 0, 0);
             } if(Gdx.input.isKeyPressed(Input.Keys.W)){

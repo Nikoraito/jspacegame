@@ -30,7 +30,7 @@ import net.nikoraito.jspacegame.entities.PlayerController;
 
     However, because of loss of decimal precision over distance from 0, a craft traveling outward from the center of the
      universe would experience errorless compressions. Thus, coordinate space should be localized to the player's current
-     position. Thus, the player's position as it renders on a client should be (0,0,0), 
+     position(?). Thus, the player's position as it renders on their client should be (0,0,0),
 
 
     */

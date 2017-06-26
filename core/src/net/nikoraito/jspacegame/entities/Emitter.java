@@ -2,6 +2,9 @@ package net.nikoraito.jspacegame.entities;
 
 /**
  * Created by The Plank on 2016-06-24.
+ *
+ * Emitters generate some kind of signal
+ *
  */
 public interface Emitter{
 

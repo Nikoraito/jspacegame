@@ -30,8 +30,8 @@ import net.nikoraito.jspacegame.entities.*;
     to get from the coordinate 0,0,0 to the point where you would reach the overflow point.
 
     However, because of loss of decimal precision over distance from 0, a craft traveling outward from the center of the
-     universe would experience errorless compressions. Thus, coordinate space should be localized to the player's current
-     position. Thus, the player's position as it renders on a client should be (0,0,0),
+     universe would experience floating precision issues. Thus, coordinate space should be localized to the player's current
+     position. The player's position as it renders on a client should be (0,0,0).
 
 
     */
@@ -80,7 +80,7 @@ public class JSpaceGame implements ApplicationListener{
         models = g.models;      //
         players = g.players;    //
 
-        initInstances(); //
+
 
         //Graphical Initialization
         environment = new Environment();
@@ -105,6 +105,7 @@ public class JSpaceGame implements ApplicationListener{
         me.pc = new PlayerController(new Vector3(0,1,-3), new Quaternion(0, 0, 0, 1), camController, cam);
         me.entity.setController(me.pc);
 
+        initInstances(); //
 
         players.add(me);
 
@@ -183,8 +184,7 @@ public class JSpaceGame implements ApplicationListener{
     @Override
     public void dispose(){
 
-        //Some things have to be set to null so that when entities are serialized, the very complex and PARTIALLY
-        //  NATIVE objects
+        //Some things have to be set to null so that when entities are serialized, there aren't circular references
         cam             = null;
         camController   = null;
 
